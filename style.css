@@ -1,23 +1,20 @@
 body {
-  width: 100vw;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: "Barlow", sans-serif;
   margin: 0;
-  padding: 0;
   overflow-x: hidden;
+  /* -----------------------------------------------------------------------*/
 }
 body .main-container {
-  width: 90%;
-  height: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   transition: all 0.8s ease;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
 }
 body .main-container header {
-  width: 100%;
+  width: 90%;
   height: 75px;
   background-color: white;
   display: flex;
@@ -69,7 +66,7 @@ body .main-container header .header-container .rightHandSideInHeader .ul-contain
   color: rgb(161, 158, 158);
 }
 body .main-container main {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
 }
@@ -521,14 +518,19 @@ body .main-container main .fifth-container .inner-fifth .social-icon-container .
   color: white;
 }
 body .second-main-container {
-  width: 90%;
+  width: 100vw;
   display: none;
   transform: scale(0);
   transition: all 1.5s ease;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  position: relative;
+  overflow-x: hidden;
 }
 body .second-main-container header {
-  width: 100%;
+  width: 90%;
   height: 75px;
   background-color: white;
   display: flex;
@@ -580,7 +582,7 @@ body .second-main-container header .header-container .rightHandSideInHeader .ul-
   color: rgb(161, 158, 158);
 }
 body .second-main-container main {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
 }
@@ -1277,6 +1279,9 @@ body .second-main-container main .third-container1 .inner-third .right .inner-ri
   font-size: 15px;
   font-weight: 800;
 }
+body .second-main-container main .third-container1 .inner-third .right .inner-right .buttonClick3:active {
+  background-color: rgb(10, 236, 236);
+}
 body .second-main-container main .fourth-container1 {
   width: 100%;
   height: 140px;
@@ -1329,4 +1334,124 @@ body .second-main-container main .fourth-container1 .inner-fifth .social-icon-co
   margin-right: 20px;
   font-size: 25px;
   color: white;
+}
+body .second-main-container main .checkOutContainer {
+  position: absolute;
+  width: 100vw;
+  height: 345vh;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.473);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+body .second-main-container main .checkOutContainer .checkoutCard {
+  width: 420px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 400px;
+  transform: scale(0);
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 20px rgba(26, 25, 25, 0.329);
+}
+body .second-main-container main .checkOutContainer .checkoutCard .top {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #252e3d;
+  font-family: "Fraunces", serif;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+body .second-main-container main .checkOutContainer .checkoutCard .top p {
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+body .second-main-container main .checkOutContainer .checkoutCard .bottom {
+  width: 100%;
+  height: calc(100% - 60px);
+  background-color: white;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner-bottom-text {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner-bottom-text .fill-in-blank-container {
+  font-family: "Fraunces", serif;
+  font-size: 21px;
+  font-weight: 800;
+  color: #777c80;
+  position: relative;
+  line-height: 29px;
+  letter-spacing: -0.4px;
+}
+body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner-bottom-text .fill-in-blank-container .for-first-blank1,
+body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner-bottom-text .fill-in-blank-container .for-second-blank1,
+body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner-bottom-text .fill-in-blank-container .for-third-blank1,
+body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner-bottom-text .fill-in-blank-container .for-fourth-blank1,
+body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner-bottom-text .fill-in-blank-container .for-fifth-blank1 {
+  width: 10px;
+  height: 8px;
+  border-bottom: 3px solid rgb(6, 117, 117);
+  color: rgb(6, 117, 117);
+}
+body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner-bottom-text .fill-in-blank-container .fa-solid {
+  font-size: 14px;
+  position: absolute;
+}
+body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner-bottom-text .correctMessageContainer {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner-bottom-text .correctMessageContainer p {
+  color: #777c80;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner-bottom-text .checkoutButtonContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Fraunces", serif;
+  margin-top: 40px;
+}
+body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner-bottom-text .checkoutButtonContainer p {
+  font-size: 20px;
+  color: #303b49;
+  padding: 0;
+  margin: 0;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner-bottom-text .checkoutButtonContainer button {
+  width: 250px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background: rgb(6, 117, 117);
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

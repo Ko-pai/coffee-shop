@@ -16,6 +16,23 @@ const fourthBlank = document.querySelector(".for-fourth-blank")
 const fifthBlank = document.querySelector(".for-fifth-blank")
 
 
+const firstBlank1 = document.querySelector(".for-first-blank1")
+const secondBlank1 = document.querySelector(".for-second-blank1")
+const thirdBlank1 = document.querySelector(".for-third-blank1")
+const fourthBlank1 = document.querySelector(".for-fourth-blank1")
+const fifthBlank1 = document.querySelector(".for-fifth-blank1")
+
+const checkoutContainer = document.querySelector(".checkOutContainer")
+const checkoutCard = document.querySelector(".checkoutCard")
+const createButton3 = document.querySelector(".buttonClick3")
+
+
+window.addEventListener("load",()=>{
+    createButton3.disabled = true
+})
+
+
+
 createButton2.addEventListener("click",(e)=>{
     e.preventDefault()
 
@@ -168,7 +185,7 @@ cardData.map((data)=>{
     const listInPlan = document.createElement("li")
      const spanInPlanList = document.createElement("span")
      const textInPlanList = document.createElement("p")
-     const listOne = document.querySelector(".one")
+    
 
      listInPlan.id = data.id
      listInPlan.classList.add(data.class)
@@ -232,7 +249,11 @@ cardData.map((data)=>{
         
         if(listInPlan.classList.contains("active")){
             listOne.firstChild.style.color = "rgb(8, 133, 133)"
+            listOne.classList.add("active")
             firstBlank.style.borderBottom = "0px"
+            firstBlank1.style.borderBottom = "0px"
+            createButton3.disabled = false
+            
         }else{
             firstBlank.innerHTML ="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"
             firstBlank.style.borderBottom = "3px solid rgb(6, 117, 117)"
@@ -329,7 +350,7 @@ coffeeTypeData.map((d)=>{
     const listCreate2 = document.createElement("li")
     const spanInPlanList2 = document.createElement("span")
     const textInPlanList2 = document.createElement("p")
-    const listTwo = document.querySelector(".two")
+    
 
     listCreate2.id = d.id
     spanInPlanList2.innerText = d.name
@@ -385,12 +406,18 @@ coffeeTypeData.map((d)=>{
         
         if(listCreate2.classList.contains("active")){
             listTwo.firstChild.style.color = "rgb(8, 133, 133)"
+            listTwo.classList.add("active")
             secondBlank.style.borderBottom = "0px"
+            secondBlank1.style.borderBottom = "0px"
+            
         }else{
             listTwo.firstChild.style.color = "#303b49"
             secondBlank.style.borderBottom = "3px solid rgb(6, 117, 117)"
             secondBlank.innerHTML ="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"
 
+            secondBlank1.style.borderBottom = "3px solid rgb(6, 117, 117)"
+            secondBlank1.innerHTML ="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"
+            
         }
     })
 
@@ -467,7 +494,7 @@ weightData.map((data)=>{
     const listCreate3 = document.createElement("li")
     const spanInPlanList3 = document.createElement("span")
     const textInPlanList3 = document.createElement("p")
-    const listThree = document.querySelector(".three")
+    
     
     listCreate3.id = data.id
     spanInPlanList3.innerText = data.no
@@ -524,10 +551,15 @@ weightData.map((data)=>{
         if(listCreate3.classList.contains("active")){
             listThree.firstChild.style.color = "rgb(8, 133, 133)"
             thirdBlank.style.borderBottom = "0px"
+            thirdBlank1.style.borderBottom = "0px"
+            listThree.classList.add("active")
         }else{
             listThree.firstChild.style.color = "#303b49"
             thirdBlank.style.borderBottom = "3px solid rgb(6, 117, 117)"
             thirdBlank.innerHTML ="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"
+            thirdBlank1.style.borderBottom = "3px solid rgb(6, 117, 117)"
+            thirdBlank1.innerHTML ="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"
+            
         }
     })
 
@@ -599,7 +631,7 @@ grindData.map((d)=>{
     const listCreate4 = document.createElement("li")
     const spanInPlanList4 = document.createElement("span")
     const textInPlanList4 = document.createElement("p")
-    const listFour = document.querySelector(".four")
+    
     
 
     listCreate4.id = d.id
@@ -653,10 +685,15 @@ grindData.map((d)=>{
         if(listCreate4.classList.contains("active")){
             listFour.firstChild.style.color = "rgb(8, 133, 133)"
             fourthBlank.style.borderBottom = "0px"
+            fourthBlank1.style.borderBottom = "0px"
+            listFour.classList.add("active")
         }else{
             listFour.firstChild.style.color = "#303b49"
             fourthBlank.style.borderBottom = "3px solid rgb(6, 117, 117)"
             fourthBlank.innerHTML ="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"
+            fourthBlank1.style.borderBottom = "3px solid rgb(6, 117, 117)"
+            fourthBlank1.innerHTML ="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"
+            
         }
     })
 
@@ -717,7 +754,7 @@ const deliverData = [
     {
         id : 3,
         name : "Every month",
-        text : "22.50 per shipment. Includes free pririty shipping",
+        text : "$22.50 per shipment. Includes free pririty shipping",
         class : "everyMonth",
         classForSpan : "every-month-text",
         classforP : "month-plan"
@@ -729,7 +766,7 @@ deliverData.map((d)=>{
     const listCreate5 = document.createElement("li")
     const spanInPlanList5 = document.createElement("span")
     const textInPlanList5 = document.createElement("p")
-    const listFive = document.querySelector(".five")
+    
    
     
 
@@ -788,12 +825,16 @@ deliverData.map((d)=>{
         if(listCreate5.classList.contains("active")){
             listFive.firstChild.style.color = "rgb(8, 133, 133)"
             fifthBlank.style.borderBottom = "0px"
+            fifthBlank1.style.borderBottom = "0px"
+            listFive.classList.add("active")
             
         }else{
             listFive.firstChild.style.color = "#303b49"
             fifthBlank.innerHTML ="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"
             fifthBlank.style.borderBottom = "3px solid rgb(6, 117, 117)"
-        
+            fifthBlank1.innerHTML ="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"
+            fifthBlank1.style.borderBottom = "3px solid rgb(6, 117, 117)"
+            
         }
     })
 
@@ -828,20 +869,60 @@ deliverData.map((d)=>{
 
 
 MAIN_THIRD_CONTAINER.addEventListener("click",()=>{
+    
+
+
     if(((!arrowIcon.classList.contains("active")) && (!arrowIconContainer.classList.contains("active"))) && ((!arrowBoxInWeight.classList.contains("active")) && (!arrowIconContianerInGrind.classList.contains("active"))) && (!arrowIconContianerInDeliver.classList.contains("active"))){
         MAIN_THIRD_CONTAINER.style.height = "950px"
-        console.log("good");
+        
+        
     }
 })
 
+const listOne = document.querySelector(".one")
+const listTwo = document.querySelector(".two")
+const listThree = document.querySelector(".three")
+const listFour = document.querySelector(".four")
+const listFive = document.querySelector(".five")
 
 
 
+//this is appear checkout box after checking all list active from choice step container
+createButton3.addEventListener("click",()=>{
+    if(((listOne.classList.contains("active") && listTwo.classList.contains("active")) && (listThree.classList.contains("active") && listFour.classList.contains("active"))) && listFive.classList.contains("active")){
+        checkoutContainer.style.transform = "scale(1)"
+        checkoutCard.style.transform = "scale(1)"
+    }
+})
 
+// createButton3.disabled = false
+//         checkoutContainer.style.transform = "scale(1)"
+//         checkoutCard.style.transform = "scale(1)"
 
+const billText = document.querySelector(".billText")
+const checkoutButton = document.querySelector(".checkoutButton")
 
+checkoutButton.addEventListener("click",()=>{
+    checkoutContainer.style.transform = "scale(0)"
+    checkoutCard.style.transform = "scale(0)"
 
+    mainContainer.style.display = "flex"
+    mainContainer.style.transform = "rotate(1turn) scale(1)"
+    secondMainContainer.style.transform = "translateY(-100%) scale(0)"
+    
+    
+    setTimeout(()=>{
+        window.location.reload()
+        secondMainContainer.style.display = "none"
+    },1000)
 
+    listOne.classList.remove("active")
+    listTwo.classList.remove("active")
+    listThree.classList.remove("active")
+    listFour.classList.remove("active")
+    listFive.classList.remove("active")
+
+})
 
 
 
@@ -864,6 +945,7 @@ function activeFilter (){
             detail.style.fontWeight = "400"
             detail.style.color = "#ffffffb5"
             firstBlank.innerHTML = name.innerText
+            firstBlank1.innerHTML = name.innerText
             
 }
 function activeCapsule (){
@@ -871,11 +953,12 @@ function activeCapsule (){
             const name = document.querySelector(".capsule-text")
             const detail = document.querySelector(".detail1")
             filter.style.background = "rgb(8, 133, 133)"
-            firstBlank.innerHTML = name.innerText
             filter.classList.add("active")
             name.style.color = "white"
             detail.style.fontWeight = "400"
             detail.style.color = "#ffffffb5"
+            firstBlank.innerHTML = name.innerText
+            firstBlank1.innerHTML = name.innerText
             
 }
 function activeEspresso (){
@@ -888,6 +971,7 @@ function activeEspresso (){
             detail.style.fontWeight = "400"
             detail.style.color = "#ffffffb5"
             firstBlank.innerHTML = name.innerText
+            firstBlank1.innerHTML = name.innerText
             
 }
 
@@ -942,6 +1026,7 @@ function activeSingleType (){
             detail.style.fontWeight = "400"
              detail.style.color = "#ffffffb5"
             secondBlank.innerHTML = name.innerText
+            secondBlank1.innerHTML = name.innerText
 }
 function activeDecafType (){
             const decaf = document.querySelector(".decaf")
@@ -953,6 +1038,7 @@ function activeDecafType (){
             detail.style.fontWeight = "400"
             detail.style.color = "#ffffffb5"
             secondBlank.innerHTML = name.innerText
+            secondBlank1.innerHTML = name.innerText
 }
 function activeBlendedType (){
             const blended = document.querySelector(".blended")
@@ -964,6 +1050,7 @@ function activeBlendedType (){
             detail.style.fontWeight = "400"
             detail.style.color = "#ffffffb5"
             secondBlank.innerHTML = name.innerText
+            secondBlank1.innerHTML = name.innerText
             
 }
 //unactive
@@ -1020,6 +1107,7 @@ function unActiveBlendedType(){
         detail.style.fontWeight = "400"
         detail.style.color = "#ffffffb5"
         thirdBlank.innerHTML = name.innerText
+        thirdBlank1.innerHTML = name.innerText
 }
     function activeMediumSize(){
         const mediumSize = document.querySelector(".medium")
@@ -1031,6 +1119,7 @@ function unActiveBlendedType(){
         detail.style.fontWeight = "400"
         detail.style.color = "#ffffffb5"
         thirdBlank.innerHTML = name.innerText
+        thirdBlank1.innerHTML = name.innerText
         
 }
     function activeLargeSize(){
@@ -1043,6 +1132,7 @@ function unActiveBlendedType(){
         detail.style.fontWeight = "400"
         detail.style.color = "#ffffffb5"
         thirdBlank.innerHTML = name.innerText
+        thirdBlank1.innerHTML = name.innerText
 }
 
 //  unActive
@@ -1097,6 +1187,7 @@ function unActiveBlendedType(){
         detail.style.fontWeight = "400"
         detail.style.color = "#ffffffb5"
         fourthBlank.innerHTML = name.innerText
+        fourthBlank1.innerHTML = name.innerText
 }
     function activeFilterGrind(){
         const filterGrind = document.querySelector(".filterGrind")
@@ -1108,6 +1199,7 @@ function unActiveBlendedType(){
         detail.style.fontWeight = "400"
         detail.style.color = "#ffffffb5"
         fourthBlank.innerHTML = name.innerText
+        fourthBlank1.innerHTML = name.innerText
 }
     function activeCafetiere(){
         const cafetiere = document.querySelector(".cafetiere")
@@ -1119,6 +1211,7 @@ function unActiveBlendedType(){
         detail.style.fontWeight = "400"
         detail.style.color = "#ffffffb5"
         fourthBlank.innerHTML = name.innerText
+        fourthBlank1.innerHTML = name.innerText
 }
 
 
@@ -1173,6 +1266,8 @@ function activeEveryWeek(){
     detail.style.fontWeight = "400"
     detail.style.color = "#ffffffb5"
     fifthBlank.innerHTML = name.innerText
+    fifthBlank1.innerHTML = name.innerText
+    billText.innerHTML = "$14.00/wk"
 }
 function activeEveryTwoWeeks(){
     const everyTwoWeeks = document.querySelector(".everyTwoWeeks")
@@ -1184,6 +1279,8 @@ function activeEveryTwoWeeks(){
     detail.style.fontWeight = "400"
     detail.style.color = "#ffffffb5"
      fifthBlank.innerHTML = name.innerText
+     fifthBlank1.innerHTML = name.innerText
+     billText.innerHTML = "$17.25/2wks"
 }
 function activeEveryMonth(){
     const everyMonth = document.querySelector(".everyMonth")
@@ -1195,6 +1292,8 @@ function activeEveryMonth(){
     detail.style.fontWeight = "400"
     detail.style.color = "#ffffffb5"
      fifthBlank.innerHTML = name.innerText
+     fifthBlank1.innerHTML = name.innerText
+     billText.innerHTML = "$22.0/mo"
 }
 
 //unactive
