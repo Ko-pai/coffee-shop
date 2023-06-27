@@ -300,7 +300,7 @@ cardData.map((data)=>{
         cardTypeContainer.style.display = "flex"
         listOne.style.opacity = "1" 
         listOne.style.borderBottom = "1px solid #777c8056" 
-        MAIN_THIRD_CONTAINER.style.height = "2700px"
+        MAIN_THIRD_CONTAINER.style.height = "2900px"
         // spanInPlanList.style.display = "block"
         
     }
@@ -450,7 +450,7 @@ coffeeTypeData.map((d)=>{
             coffeeTypeCardContainer.style.display = "flex"
             listTwo.style.borderBottom = "1px solid #777c8056"
             listTwo.style.opacity = "1"
-            MAIN_THIRD_CONTAINER.style.height = "2700px"
+            MAIN_THIRD_CONTAINER.style.height = "2900px"
         }
     })
 
@@ -868,7 +868,7 @@ deliverData.map((d)=>{
             deliverTypeCardContainer.style.display = "flex"
             deliverContainer.style.height = "540px"
             secondCardContainerInDeliver.style.height = "calc(100% - 90px)"
-            MAIN_THIRD_CONTAINER.style.height = "2700px"
+            MAIN_THIRD_CONTAINER.style.height = "2900px"
             listFive.style.opacity = "1"
             listFive.style.borderBottom = "1px solid #777c8056" 
         }
