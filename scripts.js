@@ -1,3 +1,9 @@
+const tl = gsap.timeline({default : {duration : 0.75, ease : "power1.out"}})
+
+tl.fromTo('.main-container' , {opacity : 0 , scale : 0, y : -5500 } , {opacity : 1 , scale : 1, y : 0 ,duration : 1})
+tl.fromTo('.second-main-container' , {opacity : 0 , scale : 0, y : -5500 } , {opacity : 1 , scale : 1, y : 0 ,duration : 1})
+
+
 const createButton = document.querySelector(".buttonClick")
 const createButton2 = document.querySelector(".buttonClick2")
 const mainContainer = document.querySelector(".main-container")
@@ -34,10 +40,12 @@ window.addEventListener("load",()=>{
 
 
 createButton2.addEventListener("click",(e)=>{
+    tl.fromTo('.second-main-container' , {opacity : 0 , scale : 0, x : -5500 } , {opacity : 1 , scale : 1, x : 0 })
     e.preventDefault()
 
     
     secondMainContainer.style.display = "flex"
+    
     secondMainContainer.style.transform = "rotate(1turn) scale(1)"
     mainContainer.style.transform = "translateY(-100%) scale(0)"
     
@@ -50,7 +58,7 @@ createButton2.addEventListener("click",(e)=>{
 // To appear next page after clicked create plan button
 createButton.addEventListener("click",(e)=>{
     e.preventDefault()
-
+    tl.fromTo('.second-main-container' , {opacity : 0 , scale : 0, y : -5500 } , {opacity : 1 , scale : 1, y : 0 ,duration : 1})
     
     secondMainContainer.style.display = "flex"
     secondMainContainer.style.transform = "rotate(1turn) scale(1)"
@@ -288,11 +296,11 @@ cardData.map((data)=>{
         icon.style.transform = "rotate(0.5turn)"
         arrowIcon.classList.add("active")
         secondCardContainer.style.height = "calc(100% - 90px)"
-        choiceCoffeeContainer.style.height = "420px"
+        choiceCoffeeContainer.style.height = "540px"
         cardTypeContainer.style.display = "flex"
         listOne.style.opacity = "1" 
         listOne.style.borderBottom = "1px solid #777c8056" 
-        MAIN_THIRD_CONTAINER.style.height = "2400px"
+        MAIN_THIRD_CONTAINER.style.height = "2700px"
         // spanInPlanList.style.display = "block"
         
     }
@@ -438,11 +446,11 @@ coffeeTypeData.map((d)=>{
             arrowIconContainer.classList.add("active")
             arrowIconCoffeeType.style.transform = "rotate(0.5turn)"
             secondCardInCoffee.style.height = "calc(100% - 90px)"
-            coffeeContainer.style.height = "420px"
+            coffeeContainer.style.height = "540px"
             coffeeTypeCardContainer.style.display = "flex"
             listTwo.style.borderBottom = "1px solid #777c8056"
             listTwo.style.opacity = "1"
-            MAIN_THIRD_CONTAINER.style.height = "2400px"
+            MAIN_THIRD_CONTAINER.style.height = "2700px"
         }
     })
 
@@ -577,10 +585,10 @@ weightData.map((data)=>{
         }else{
             arrowBoxInWeight.classList.add("active")
             iconWeight.style.transform = "rotate(0.5turn)"
-            weightContainer.style.height = "420px"
+            weightContainer.style.height = "540px"
             secondCardContainerInWeight.style.height = "calc(100% - 90px)"
             weightCardContainer.style.display = "flex"
-            MAIN_THIRD_CONTAINER.style.height = "2400px"
+            MAIN_THIRD_CONTAINER.style.height = "2700px"
             listThree.style.opacity = "1"
             listThree.style.borderBottom = "1px solid #777c8056" 
         }
@@ -710,13 +718,15 @@ grindData.map((d)=>{
            MAIN_THIRD_CONTAINER.style.height = "2000px"
            listFour.style.opacity = "0.46"
            listFour.style.borderBottom = "1px solid #777c80fb" 
+
         }else{
+            
             arrowIconContianerInGrind.classList.add("active")
             arrowIconInGrindStep.style.transform = "rotate(0.5turn)"
-            grindContainer.style.height = "420px"
+            grindContainer.style.height = "540px"
             grindTypeCardContainer.style.display = "flex"
-            secondCardContainerInGrind.style.height ="calc(100% - 90px)"
-            MAIN_THIRD_CONTAINER.style.height = "2400px"
+            secondCardContainerInGrind.style.height =" calc(100% - 90px) "
+            MAIN_THIRD_CONTAINER.style.height = "2700px"
             listFour.style.opacity = "1"
             listFour.style.borderBottom = "1px solid #777c8056" 
         }
@@ -856,9 +866,9 @@ deliverData.map((d)=>{
             arrowIconContianerInDeliver.classList.add("active")
             arrowIconInDeliverStep.style.transform = "rotate(0.5turn)"
             deliverTypeCardContainer.style.display = "flex"
-            deliverContainer.style.height = "420px"
+            deliverContainer.style.height = "540px"
             secondCardContainerInDeliver.style.height = "calc(100% - 90px)"
-            MAIN_THIRD_CONTAINER.style.height = "2400px"
+            MAIN_THIRD_CONTAINER.style.height = "2700px"
             listFive.style.opacity = "1"
             listFive.style.borderBottom = "1px solid #777c8056" 
         }
@@ -874,9 +884,31 @@ MAIN_THIRD_CONTAINER.addEventListener("click",()=>{
 
     if(((!arrowIcon.classList.contains("active")) && (!arrowIconContainer.classList.contains("active"))) && ((!arrowBoxInWeight.classList.contains("active")) && (!arrowIconContianerInGrind.classList.contains("active"))) && (!arrowIconContianerInDeliver.classList.contains("active"))){
         MAIN_THIRD_CONTAINER.style.height = "950px"
-        
-        
+        checkoutContainer.style.height = "345vh"
+        checkoutCard.style.marginBottom = "400px"
+    }    
+
+    if(arrowIcon.classList.contains("active") && arrowIconContainer.classList.contains("active")){
+        checkoutContainer.style.height = "100%"
+        checkoutCard.style.marginBottom = "55%"
+    }else{
+        checkoutContainer.style.height = "100%"
+        checkoutCard.style.marginBottom = "400px"
     }
+    
+    
+    // else if(){
+    //     console.log("2");
+    // }else if(arrowBoxInWeight.classList.contains("active")){
+    //     console.log("3");
+    // }else if(arrowIconContianerInGrind.classList.contains("active")){
+    //     console.log("4");
+    // }else{
+    //     console.log("5");
+    // }
+    
+       
+    
 })
 
 const listOne = document.querySelector(".one")
@@ -892,6 +924,7 @@ createButton3.addEventListener("click",()=>{
     if(((listOne.classList.contains("active") && listTwo.classList.contains("active")) && (listThree.classList.contains("active") && listFour.classList.contains("active"))) && listFive.classList.contains("active")){
         checkoutContainer.style.transform = "scale(1)"
         checkoutCard.style.transform = "scale(1)"
+        
     }
 })
 
@@ -914,7 +947,7 @@ checkoutButton.addEventListener("click",()=>{
     setTimeout(()=>{
         window.location.reload()
         secondMainContainer.style.display = "none"
-    },1000)
+    },900)
 
     listOne.classList.remove("active")
     listTwo.classList.remove("active")

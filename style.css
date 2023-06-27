@@ -15,7 +15,7 @@ body .main-container {
 }
 body .main-container header {
   width: 90%;
-  height: 75px;
+  height: 100px;
   background-color: white;
   display: flex;
   align-items: center;
@@ -45,6 +45,9 @@ body .main-container header .header-container .leftHandSideInHeader span {
   font-size: 28px;
   font-weight: 900;
   color: rgb(47, 62, 90);
+}
+body .main-container header .header-container .humburgerContainer {
+  display: none;
 }
 body .main-container header .header-container .rightHandSideInHeader {
   width: 400px;
@@ -101,7 +104,7 @@ body .main-container main .first-container .inner-first-container .text-on-image
   padding-left: 5px;
 }
 body .main-container main .first-container .inner-first-container .text-on-image-container .intro-text-group h1 {
-  width: 70%;
+  width: 71%;
   font-family: "Fraunces", serif;
   font-size: 70px;
   padding: 0;
@@ -118,7 +121,7 @@ body .main-container main .first-container .inner-first-container .text-on-image
 }
 body .main-container main .first-container .inner-first-container .text-on-image-container .intro-text-group button {
   width: 180px;
-  height: 50px;
+  padding: 15px;
   background-color: rgb(4, 141, 141);
   text-align: center;
   font-family: "Fraunces", serif;
@@ -129,6 +132,9 @@ body .main-container main .first-container .inner-first-container .text-on-image
   font-weight: 600;
   letter-spacing: 0.8px;
   margin-top: 50px;
+}
+body .main-container main .first-container .inner-first-container .text-on-image-container .intro-text-group button:active {
+  background-color: rgb(6, 209, 209);
 }
 body .main-container main .second-container {
   width: 100%;
@@ -154,7 +160,7 @@ body .main-container main .second-container .inner-second-container .ourCollecti
   position: relative;
 }
 body .main-container main .second-container .inner-second-container .ourCollectionText .blur-text {
-  font-size: 165px;
+  font-size: 160px;
   font-family: "Fraunces", serif;
   padding: 0;
   font-weight: 800;
@@ -466,6 +472,9 @@ body .main-container main .fourth-container .inner-fourth .button-container butt
   letter-spacing: 0.8px;
   align-self: flex-start;
 }
+body .main-container main .fourth-container .inner-fourth .button-container button:active {
+  background-color: rgb(10, 236, 236);
+}
 body .main-container main .fifth-container {
   width: 100%;
   height: 140px;
@@ -542,6 +551,9 @@ body .second-main-container header .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+body .second-main-container header .header-container .humburgerContainer1 {
+  display: none;
 }
 body .second-main-container header .header-container .leftHandSideInHeader {
   width: 280px;
@@ -621,7 +633,7 @@ body .second-main-container main .first-container1 .inner-first-container .text-
   justify-content: center;
 }
 body .second-main-container main .first-container1 .inner-first-container .text-on-image-container .intro-text-group h1 {
-  width: 70%;
+  width: 75%;
   font-family: "Fraunces", serif;
   font-size: 70px;
   padding: 0;
@@ -834,18 +846,17 @@ body .second-main-container main .third-container1 .inner-third .right .inner-ri
   height: 0px;
   transition: all 0.8s ease;
   display: flex;
-  align-items: center;
 }
 body .second-main-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container {
   width: 90%;
-  height: 90%;
-  align-items: center;
+  height: 70%;
   justify-content: space-between;
   display: none;
   transition: all 0.5s ease;
   cursor: pointer;
   padding: 0;
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 body .second-main-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li {
   width: 250px;
@@ -857,6 +868,7 @@ body .second-main-container main .third-container1 .inner-third .right .inner-ri
   flex-direction: column;
   align-items: center;
   list-style: none;
+  outline: none;
   transition: all 0.4s ease;
 }
 body .second-main-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li .capsule-text,
@@ -919,11 +931,10 @@ body .second-main-container main .third-container1 .inner-third .right .inner-ri
   height: 0px;
   transition: all 0.8s ease;
   display: flex;
-  align-items: center;
 }
 body .second-main-container main .third-container1 .inner-third .right .inner-right .coffee-type-container .second-card-container-in-coffee-type .coffee-type-card-container {
   width: 90%;
-  height: 90%;
+  height: 70%;
   align-items: center;
   justify-content: space-between;
   display: none;
@@ -931,6 +942,7 @@ body .second-main-container main .third-container1 .inner-third .right .inner-ri
   cursor: pointer;
   padding: 0;
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 body .second-main-container main .third-container1 .inner-third .right .inner-right .coffee-type-container .second-card-container-in-coffee-type .coffee-type-card-container li {
   width: 250px;
@@ -1002,11 +1014,10 @@ body .second-main-container main .third-container1 .inner-third .right .inner-ri
   height: 0px;
   transition: all 0.8s ease;
   display: flex;
-  align-items: center;
 }
 body .second-main-container main .third-container1 .inner-third .right .inner-right .weight-of-coffee-container .second-card-container-in-weight-type .weight-type-card-container {
   width: 90%;
-  height: 90%;
+  height: 70%;
   align-items: center;
   justify-content: space-between;
   display: none;
@@ -1014,6 +1025,7 @@ body .second-main-container main .third-container1 .inner-third .right .inner-ri
   cursor: pointer;
   padding: 0;
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 body .second-main-container main .third-container1 .inner-third .right .inner-right .weight-of-coffee-container .second-card-container-in-weight-type .weight-type-card-container li {
   width: 250px;
@@ -1086,11 +1098,10 @@ body .second-main-container main .third-container1 .inner-third .right .inner-ri
   height: 0px;
   transition: all 0.8s ease;
   display: flex;
-  align-items: center;
 }
 body .second-main-container main .third-container1 .inner-third .right .inner-right .grind-type-container .second-card-container-in-grind-type .grind-type-card-container {
   width: 90%;
-  height: 90%;
+  height: 70%;
   align-items: center;
   justify-content: space-between;
   display: none;
@@ -1098,6 +1109,7 @@ body .second-main-container main .third-container1 .inner-third .right .inner-ri
   cursor: pointer;
   padding: 0;
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 body .second-main-container main .third-container1 .inner-third .right .inner-right .grind-type-container .second-card-container-in-grind-type .grind-type-card-container li {
   width: 250px;
@@ -1170,11 +1182,10 @@ body .second-main-container main .third-container1 .inner-third .right .inner-ri
   height: 0px;
   transition: all 0.8s ease;
   display: flex;
-  align-items: center;
 }
 body .second-main-container main .third-container1 .inner-third .right .inner-right .deliver-type-container .second-card-container-in-deliver-type .deliver-type-card-container {
   width: 90%;
-  height: 90%;
+  height: 70%;
   align-items: center;
   justify-content: space-between;
   display: none;
@@ -1182,6 +1193,7 @@ body .second-main-container main .third-container1 .inner-third .right .inner-ri
   cursor: pointer;
   padding: 0;
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 body .second-main-container main .third-container1 .inner-third .right .inner-right .deliver-type-container .second-card-container-in-deliver-type .deliver-type-card-container li {
   width: 250px;
@@ -1454,4 +1466,422 @@ body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner
   border-radius: 5px;
   background: rgb(6, 117, 117);
   font-weight: 600;
-}/*# sourceMappingURL=style.css.map */
+}
+body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner-bottom-text .checkoutButtonContainer button:active {
+  background-color: rgb(7, 216, 216);
+}
+
+/* --------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------*/
+@media (max-width: 560px) {
+  body .main-container header {
+    height: 100px;
+  }
+  body .main-container header .header-container .rightHandSideInHeader {
+    display: none;
+  }
+  body .main-container header .header-container .humburgerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+  }
+  body .main-container header .header-container .humburgerContainer:active {
+    transform: scale(1.1);
+  }
+  body .main-container header .header-container .humburgerContainer .fa-bars {
+    font-size: 40px;
+  }
+  body .main-container main {
+    align-items: center;
+  }
+  body .main-container main .first-container .inner-first-container {
+    background: url(./assest/background-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  body .main-container main .first-container .inner-first-container .text-on-image-container {
+    width: 100%;
+    margin-left: 0;
+  }
+  body .main-container main .first-container .inner-first-container .text-on-image-container .intro-text-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .main-container main .first-container .inner-first-container .text-on-image-container .intro-text-group h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+  }
+  body .main-container main .first-container .inner-first-container .text-on-image-container .intro-text-group p {
+    width: 100%;
+    text-align: center;
+  }
+  body .main-container main .second-container {
+    height: 1900px;
+  }
+  body .main-container main .second-container .inner-second-container .ourCollectionText {
+    display: none;
+  }
+  body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .main-container main .third-container {
+    height: 1800px;
+  }
+  body .main-container main .third-container .inner-third-container .firstDiv {
+    width: 100%;
+    height: 1075px;
+  }
+  body .main-container main .third-container .inner-third-container .firstDiv .whyChooseContainer {
+    width: 100%;
+    height: 28%;
+    justify-content: unset;
+    background-color: #29374e;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+  body .main-container main .third-container .inner-third-container .firstDiv .whyChooseContainer p {
+    width: 80%;
+    line-height: 26px;
+  }
+  body .main-container main .third-container .inner-third-container .secondDiv {
+    height: auto;
+    justify-content: center;
+    top: 25%;
+  }
+  body .main-container main .third-container .inner-third-container .secondDiv .card-container {
+    height: auto;
+    flex-direction: column;
+  }
+  body .main-container main .third-container .inner-third-container .secondDiv .card-container .quality-card, body .main-container main .third-container .inner-third-container .secondDiv .card-container .exculsive-card, body .main-container main .third-container .inner-third-container .secondDiv .card-container .shipping-card {
+    height: 400px;
+    width: 315px;
+    margin-bottom: 40px;
+  }
+  body .main-container main .fourth-container {
+    height: 1250px;
+  }
+  body .main-container main .fourth-container .inner-fourth .text-container-in-fourth {
+    width: 90%;
+  }
+  body .main-container main .fourth-container .inner-fourth .text-container-in-fourth h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+  body .main-container main .fourth-container .inner-fourth .circle-line-container {
+    display: none;
+  }
+  body .main-container main .fourth-container .inner-fourth .plan-text-container {
+    flex-direction: column;
+    align-items: center;
+    height: 480px;
+  }
+  body .main-container main .fourth-container .inner-fourth .plan-text-container section {
+    align-items: center;
+    margin-bottom: 30px;
+    width: 333px;
+  }
+  body .main-container main .fourth-container .inner-fourth .plan-text-container section .pick-plan {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  body .main-container main .fourth-container .inner-fourth .plan-text-container section .text {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  body .main-container main .fourth-container .inner-fourth .button-container {
+    margin-top: 520px;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main-container main .fifth-container {
+    width: 90%;
+    height: 400px;
+  }
+  body .main-container main .fifth-container .inner-fifth {
+    height: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .main-container main .fifth-container .inner-fifth .title-icon-container {
+    width: auto;
+  }
+  body .main-container main .fifth-container .inner-fifth .list-container {
+    width: 100%;
+    justify-content: center;
+  }
+  body .main-container main .fifth-container .inner-fifth .list-container .ul-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main-container main .fifth-container .inner-fifth .list-container .ul-container li {
+    margin-bottom: 30px;
+    margin-left: 0;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    color: #777c80;
+  }
+  body .main-container main .fifth-container .inner-fifth .social-icon-container .fa-brands {
+    margin-right: 30px;
+    font-size: 30px;
+  }
+  body .second-main-container header .header-container .rightHandSideInHeader {
+    display: none;
+  }
+  body .second-main-container header .header-container .humburgerContainer1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+  }
+  body .second-main-container header .header-container .humburgerContainer1:active {
+    transform: scale(1.1);
+  }
+  body .second-main-container header .header-container .humburgerContainer1 .fa-bars {
+    font-size: 40px;
+  }
+  body .second-main-container main .first-container1 {
+    height: 600px;
+  }
+  body .second-main-container main .first-container1 .inner-first-container {
+    background: url(./assest/plan-background-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  body .second-main-container main .first-container1 .inner-first-container .text-on-image-container {
+    width: 100%;
+    margin-left: 0;
+  }
+  body .second-main-container main .first-container1 .inner-first-container .text-on-image-container .intro-text-group {
+    width: 100%;
+  }
+  body .second-main-container main .first-container1 .inner-first-container .text-on-image-container .intro-text-group h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+  }
+  body .second-main-container main .first-container1 .inner-first-container .text-on-image-container .intro-text-group p {
+    width: 100%;
+    text-align: center;
+  }
+  body .second-main-container main .second-container1 {
+    height: 1300px;
+  }
+  body .second-main-container main .second-container1 .inner-second .circle-line-container {
+    display: none;
+  }
+  body .second-main-container main .second-container1 .inner-second .plan-text-container {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  body .second-main-container main .second-container1 .inner-second .plan-text-container section {
+    align-items: center;
+    margin-bottom: 30px;
+    width: 333px;
+  }
+  body .second-main-container main .second-container1 .inner-second .plan-text-container section .pick-plan {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  body .second-main-container main .second-container1 .inner-second .plan-text-container section .text {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  body .second-main-container main .third-container1 .inner-third {
+    width: 100%;
+  }
+  body .second-main-container main .third-container1 .inner-third .left {
+    display: none;
+  }
+  body .second-main-container main .third-container1 .inner-third .right {
+    width: 100%;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right {
+    width: 100%;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .first-text-container p {
+    font-size: 26px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li .capsule-text, body .second-main-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li .filter-text, body .second-main-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li .espresso-text {
+    font-size: 22px;
+    height: 50px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li p {
+    font-size: 15px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .coffee-type-container .first-text-container-in-coffee-type p {
+    font-size: 26px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .coffee-type-container .second-card-container-in-coffee-type .coffee-type-card-container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .coffee-type-container .second-card-container-in-coffee-type .coffee-type-card-container li {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .coffee-type-container .second-card-container-in-coffee-type .coffee-type-card-container li span {
+    font-size: 22px;
+    height: 50px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .coffee-type-container .second-card-container-in-coffee-type .coffee-type-card-container li p {
+    font-size: 15px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .weight-of-coffee-container .first-text-container-in-weight-type p {
+    font-size: 26px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .weight-of-coffee-container .second-card-container-in-weight-type .weight-type-card-container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .weight-of-coffee-container .second-card-container-in-weight-type .weight-type-card-container li {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .weight-of-coffee-container .second-card-container-in-weight-type .weight-type-card-container li span {
+    font-size: 22px;
+    height: 50px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .weight-of-coffee-container .second-card-container-in-weight-type .weight-type-card-container li p {
+    font-size: 15px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .grind-type-container .first-text-container-in-grind-type p {
+    font-size: 26px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .grind-type-container .second-card-container-in-grind-type .grind-type-card-container {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .grind-type-container .second-card-container-in-grind-type .grind-type-card-container li {
+    width: 100%;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .grind-type-container .second-card-container-in-grind-type .grind-type-card-container li span {
+    font-size: 22px;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .grind-type-container .second-card-container-in-grind-type .grind-type-card-container li p {
+    font-size: 15px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .deliver-type-container .first-text-container-in-deliver-type p {
+    font-size: 26px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .deliver-type-container .second-card-container-in-deliver-type .deliver-type-card-container {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .deliver-type-container .second-card-container-in-deliver-type .deliver-type-card-container li {
+    width: 100%;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .deliver-type-container .second-card-container-in-deliver-type .deliver-type-card-container li span {
+    font-size: 22px;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .deliver-type-container .second-card-container-in-deliver-type .deliver-type-card-container li p {
+    font-size: 15px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .final-text-container {
+    height: 300px;
+  }
+  body .second-main-container main .fourth-container1 {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+  }
+  body .second-main-container main .fourth-container1 .inner-fifth {
+    width: 90%;
+    height: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .second-main-container main .fourth-container1 .inner-fifth .title-icon-container {
+    width: auto;
+  }
+  body .second-main-container main .fourth-container1 .inner-fifth .list-container {
+    width: 100%;
+    justify-content: center;
+  }
+  body .second-main-container main .fourth-container1 .inner-fifth .list-container .ul-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .second-main-container main .fourth-container1 .inner-fifth .list-container .ul-container li {
+    margin-bottom: 30px;
+    margin-left: 0;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    color: #777c80;
+  }
+  body .second-main-container main .fourth-container1 .inner-fifth .social-icon-container .fa-brands {
+    margin-right: 30px;
+    font-size: 30px;
+  }
+  body .second-main-container main .checkOutContainer {
+    height: 400vh;
+  }
+  body .second-main-container main .checkOutContainer .checkoutCard {
+    width: 90%;
+    height: 420px;
+  }
+}
+@media (max-width: 375px) {
+  body .second-card-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  body .second-card-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li .capsule-text, body .second-card-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li .filter-text, body .second-card-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li .espresso-text {
+    height: 35px;
+  }
+  body .second-card-container main .third-container1 .inner-third .right .inner-right .grind-type-card-container .second-card-container-in-grind-type li span {
+    height: 35px;
+  }
+  body .second-card-container main .third-container1 .inner-third .right .inner-right .weight-of-coffee-container .second-card-container-in-weight-type li span {
+    height: 35px;
+  }
+  body .second-card-container main .third-container1 .inner-third .right .inner-right .deliver-type-card-container .second-card-container-in-deliver-type .deliver-type-card-container li span {
+    height: 35px;
+  }
+  body .second-card-container main .third-container1 .inner-third .right .inner-right .coffee-type-card-container .second-card-container-in-coffee-type .coffee-type-card-container li span {
+    height: 35px;
+  }
+}
+/* --------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------*//*# sourceMappingURL=style.css.map */

@@ -28,11 +28,12 @@ body{
 
         header{
             width: 90%;
-            height: 75px;
+            height: 100px;
             background-color:white;
             display: flex;
             align-items: center;
            
+
 
             .header-container{
                 width: 100%;
@@ -40,6 +41,9 @@ body{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+
+
+                
 
 
                 .leftHandSideInHeader{
@@ -67,6 +71,9 @@ body{
                     }
                 }
                 
+                .humburgerContainer{
+                    display: none;
+                }
 
                 .rightHandSideInHeader{
                     width: 400px;
@@ -139,7 +146,7 @@ body{
                             padding-left: 5px;
 
                             h1{
-                                width: 70%;
+                                width: 71%;
                                 font-family: 'Fraunces', serif;
                                 font-size: 70px;
                                 padding: 0;
@@ -160,7 +167,7 @@ body{
                             button{
 
                                 width: 180px;   
-                                height: 50px;   
+                                padding: 15px;
                                 background-color: rgb(4, 141, 141);
                                 text-align: center;
                                 font-family: 'Fraunces', serif;
@@ -172,6 +179,10 @@ body{
                                 letter-spacing: 0.8px;
                                 margin-top: 50px;
 
+
+                                &:active{
+                                    background-color: rgb(6, 209, 209);
+                                }
                             }
                         }
                     }
@@ -207,7 +218,7 @@ body{
 
 
                         .blur-text{
-                            font-size: 165px;
+                            font-size: 160px;
                             //font-family: 'Tiro Bangla', serif;
                             font-family: 'Fraunces', serif;
                             padding: 0;
@@ -385,7 +396,7 @@ body{
                         .card-container{
                             width: 90%;
                             height: 100%;
-                           
+                            
                             display: flex;
                             align-items: center;
                             justify-content: space-evenly;
@@ -605,6 +616,10 @@ body{
                             letter-spacing: 0.8px;
                             
                             align-self: flex-start;
+
+                            &:active{
+                                background-color: rgb(10, 236, 236);
+                            }
                         }
                     }
                 }
@@ -714,6 +729,10 @@ body{
                 justify-content: space-between;
 
 
+                .humburgerContainer1{
+                    display: none;
+                }
+
                 .leftHandSideInHeader{
                     width: 280px;
                     height: 80%;
@@ -820,7 +839,7 @@ body{
                             justify-content: center;
 
                             h1{
-                                width: 70%;
+                                width: 75%;
                                 font-family: 'Fraunces', serif;
                                 font-size: 70px;
                                 padding: 0;
@@ -1102,20 +1121,24 @@ body{
                                     
                                     transition: all 0.8s ease;
                                     display: flex;
-                                    align-items: center;
+                                    
                                    
 
 
                                     .card-type-container{
                                         width: 90%;
-                                        height: 90%;
-                                        align-items: center;
+                                        height: 70%;
+                                        
                                         justify-content: space-between;
                                         display: none;
                                         transition: all 0.5s ease;
                                         cursor: pointer;
                                         padding: 0;
                                         margin: 0;
+                                       -webkit-tap-highlight-color: transparent;
+  
+  
+  
 
                                         li{
                                             width: 250px;
@@ -1127,9 +1150,10 @@ body{
                                             flex-direction: column;
                                             align-items: center;
                                             list-style: none;
-                                            
+                                            outline: none;
                                             transition: all 0.4s ease;
 
+                                            
                                             .capsule-text,
                                             .filter-text,
                                             .espresso-text{
@@ -1210,13 +1234,13 @@ body{
                                     
                                     transition: all 0.8s ease;
                                     display: flex;
-                                    align-items: center;
+                                    
                                    
 
 
                                     .coffee-type-card-container{
                                         width: 90%;
-                                        height: 90%;
+                                        height: 70%;
                                         align-items: center;
                                         justify-content: space-between;
                                         display: none;
@@ -1224,6 +1248,7 @@ body{
                                         cursor: pointer;
                                         padding: 0;
                                         margin: 0;
+                                        -webkit-tap-highlight-color: transparent;
 
                                         li{
                                             width: 250px;
@@ -1314,13 +1339,13 @@ body{
                                     height: 0px;
                                     transition: all 0.8s ease;
                                     display: flex;
-                                    align-items: center;
+                                    
                                     
 
 
                                     .weight-type-card-container{
                                         width: 90%;
-                                        height: 90%;
+                                        height: 70%;
                                         align-items: center;
                                         justify-content: space-between;
                                         display: none;
@@ -1328,6 +1353,7 @@ body{
                                         cursor: pointer;
                                         padding: 0;
                                         margin: 0;
+                                        -webkit-tap-highlight-color: transparent;
 
                                         li{
                                             width: 250px;
@@ -1422,13 +1448,13 @@ body{
                                     
                                     transition: all 0.8s ease;
                                     display: flex;
-                                    align-items: center;
+                                    
                                    
 
 
                                     .grind-type-card-container{
                                         width: 90%;
-                                        height: 90%;
+                                        height: 70%;
                                         align-items: center;
                                         justify-content: space-between;
                                         display: none;
@@ -1436,6 +1462,7 @@ body{
                                         cursor: pointer;
                                         padding: 0;
                                         margin: 0;
+                                        -webkit-tap-highlight-color: transparent;
 
                                         li{
                                             width: 250px;
@@ -1527,13 +1554,13 @@ body{
                                     
                                     transition: all 0.8s ease;
                                     display: flex;
-                                    align-items: center;
+                                    
                                    
 
 
                                     .deliver-type-card-container{
                                         width: 90%;
-                                        height: 90%;
+                                        height: 70%;
                                         align-items: center;
                                         justify-content: space-between;
                                         display: none;
@@ -1541,6 +1568,7 @@ body{
                                         cursor: pointer;
                                         padding: 0;
                                         margin: 0;
+                                        -webkit-tap-highlight-color: transparent;
 
                                         li{
                                             width: 250px;
@@ -1734,6 +1762,7 @@ body{
 
             }
 
+
             .checkOutContainer{
                 position: absolute;
                 width: 100vw;
@@ -1870,6 +1899,10 @@ body{
                                     border-radius: 5px;
                                     background: rgb(6, 117, 117);
                                     font-weight: 600;
+
+                                    &:active{
+                                        background-color: rgb(7, 216, 216);
+                                    }
                                 }
                         }
 
@@ -1883,3 +1916,776 @@ body{
 
     }
 }
+
+
+
+/* --------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------*/
+            ///   For responsive 
+
+//for mobile
+@media (max-width : 560px){
+
+    body{
+        
+        .main-container{
+
+            header{
+                height: 100px;
+
+
+                .header-container{
+                    
+                    .rightHandSideInHeader{
+                        display: none;
+                    }
+
+                    .humburgerContainer{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 20px;
+                        width: 30px;
+                        height: 30px;
+                        transition: all 0.3s ease;
+                        &:active{
+                            transform: scale(1.1);
+                          
+                        }
+
+                        .fa-bars{
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+
+            main{
+                align-items: center;
+
+                .first-container{
+
+                    .inner-first-container{
+                        background: url(./assest/background-mobile.jpg);
+                        background-position: center;
+                        background-size: cover;
+
+
+                        .text-on-image-container{
+                            width: 100%;
+                            margin-left: 0;
+
+
+
+                            .intro-text-group{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                h1{
+                                    width: 100%;
+                                    text-align: center;
+                                    font-size: 50px;
+                                }
+                                
+                                p{
+                                    width: 100%;
+                                    text-align: center;
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+
+
+                .second-container{
+                    height: 1900px;
+
+                    .inner-second-container{
+
+                        .ourCollectionText{
+                            display: none;
+                        }
+
+                        .coffee-package-container{
+
+
+                            .inner-package-container{
+
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                        }
+
+                    }
+                }
+
+
+                .third-container{
+                    height: 1800px;
+
+
+
+                    .inner-third-container{
+                        
+
+                        .firstDiv{
+                            width: 100%;
+                            height: 1075px;
+
+                            .whyChooseContainer{
+                                width: 100%;
+                                height: 28%;
+                                justify-content: unset;
+                                background-color: #29374e;
+                                border-top-left-radius: inherit;
+                                border-top-right-radius: inherit;
+
+                                p{
+                                    width: 80%;
+                                    line-height: 26px;
+                                }
+                            }
+
+                        }
+                        
+                        .secondDiv{
+                            height: auto;
+                            
+                            justify-content: center;
+                            top: 25%;
+
+                            .card-container{
+                                height: auto;
+                                flex-direction: column;
+
+                                .quality-card,.exculsive-card,.shipping-card{
+                                    height: 400px;
+                                    width: 315px;
+                                    margin-bottom: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .fourth-container{
+                    height: 1250px;
+                    
+                    
+
+                    .inner-fourth{
+
+
+                        .text-container-in-fourth{
+                            width: 90%;
+
+                            h2{
+                                text-align: center;
+                                font-size: 25px;
+                            }
+                        }
+                        .circle-line-container{
+                            display: none;
+                        }
+
+                        .plan-text-container{
+                            flex-direction: column;
+                            align-items: center;
+                            height: 480px;
+
+                            section{
+                                align-items: center;
+                                margin-bottom: 30px;
+                                width: 333px;
+
+                                .pick-plan{
+
+                                    width: 100%;
+                                    text-align: center;
+                                    font-size: 28px;
+                                    margin-top: 20px;
+                                    
+                                }
+
+                                .text{
+                                    width: 100%;
+                                    text-align: center;
+                                    margin-top: 20px;
+                                }
+                            }
+                        }
+
+                        .button-container{
+                            margin-top: 520px;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+
+                .fifth-container{
+                    width: 90%;
+                    height: 400px;
+                    
+                    .inner-fifth{
+                        height: 90%;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .title-icon-container{
+                            width: auto;
+                        }
+
+                        .list-container{
+                            width: 100%;
+                            justify-content: center;
+
+                            .ul-container{
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+
+                                li{
+                                    margin-bottom: 30px;
+                                    margin-left: 0;
+                                    font-weight: 600;
+                                    font-size: 12px;  
+                                    letter-spacing: 1.4px;
+                                    color: #777c80;
+                                }
+                            }
+                        }
+
+                        .social-icon-container{
+                            
+                            .fa-brands{
+                                margin-right: 30px;
+                            font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        .second-main-container{
+
+
+            header{
+
+                .header-container{
+
+
+
+                    .rightHandSideInHeader{
+                        display: none;
+                    }
+
+                    .humburgerContainer1{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 20px;
+                        width: 30px;
+                        height: 30px;
+                        transition: all 0.3s ease;
+                        &:active{
+                            transform: scale(1.1);
+                          
+                        }
+
+                        .fa-bars{
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+
+            main{
+
+                .first-container1{
+                    height: 600px;
+
+
+                    .inner-first-container{
+                        background: url(./assest/plan-background-mobile.jpg);
+                        background-position: center;
+                        background-size: cover;
+
+                        .text-on-image-container{
+                            width: 100%;
+                            margin-left: 0;
+
+                            .intro-text-group{
+                                width: 100%;
+
+                                h1{
+                                  width: 100%;  
+                                  text-align: center;
+                                  font-size: 60px;
+
+                                }
+                                p{
+                                    width: 100%;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .second-container1{
+                    height: 1300px;
+
+
+                    .inner-second{
+
+
+                        .circle-line-container{
+                            display: none;
+
+
+                        }
+
+                        .plan-text-container{
+                            flex-direction: column;
+                            align-items: center;
+                            height: 100%;
+
+                            section{
+                                align-items: center;
+                                margin-bottom: 30px;
+                                width: 333px;
+
+                                .pick-plan{
+
+                                    width: 100%;
+                                    text-align: center;
+                                    font-size: 28px;
+                                    margin-top: 20px;
+                                    
+                                }
+
+                                .text{
+                                    width: 100%;
+                                    text-align: center;
+                                    margin-top: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .third-container1{
+
+
+                    .inner-third{
+                        width: 100%;
+
+
+                        .left{
+                            display: none;
+
+                        }
+
+                        .right{
+                            width: 100%;
+
+
+                            .inner-right{
+                                width: 100%;
+
+
+                                .choice-coffee-container{
+
+                                    .first-text-container{
+
+                                        p{
+                                            font-size: 26px;
+                                        }
+                                    }
+
+                                    .second-card-container{
+
+
+                                        .card-type-container{
+                                            width: 100%;
+                                            height: 100%;
+                                            flex-direction: column;
+
+
+                                            li{
+                                                width: 100%;
+                                                margin-bottom: 15px;
+                                                
+                                                
+                                                .capsule-text,.filter-text,.espresso-text{
+                                                    font-size: 22px;
+                                                    height: 50px;
+
+                                                }
+
+                                                p{
+                                                    font-size: 15px;
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                }
+
+
+                                .coffee-type-container{
+
+                                    .first-text-container-in-coffee-type{
+
+                                        p{
+                                            font-size: 26px;
+                                        }
+                                    }
+
+                                    .second-card-container-in-coffee-type{
+
+
+
+                                        .coffee-type-card-container{
+
+                                            width: 100%;
+                                            height: 100%;
+                                            flex-direction: column;
+
+
+                                            li{
+                                                width: 100%;
+                                                margin-bottom: 15px;
+                                                
+                                                
+                                                span{
+                                                    font-size: 22px;
+                                                    height: 50px;
+
+                                                }
+
+                                                p{
+
+                                                    font-size: 15px;
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .weight-of-coffee-container{
+
+                                    .first-text-container-in-weight-type{
+
+                                        p{
+                                            font-size: 26px;
+                                        }
+                                    }
+
+                                    .second-card-container-in-weight-type{
+
+                                        .weight-type-card-container{
+
+                                            width: 100%;
+                                            height: 100%;
+                                            flex-direction: column;
+
+
+                                            li{
+                                                width: 100%;
+                                                margin-bottom: 15px;
+                                                
+                                                
+                                                span{
+                                                    font-size: 22px;
+                                                    height: 50px;
+
+                                                }
+
+                                                p{
+
+                                                    font-size: 15px;
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                }
+
+
+                                .grind-type-container{
+
+                                    .first-text-container-in-grind-type{
+
+                                        p{
+                                            font-size: 26px;
+                                        }
+                                    }
+
+                                    .second-card-container-in-grind-type{
+
+
+                                        .grind-type-card-container{
+
+                                            height: 100%;
+                                            width: 100%;
+                                            flex-direction: column;
+
+
+                                            li{
+                                                width: 100%;
+                                                margin-bottom: 15px;
+                                                justify-content: center;
+                                                
+                                                span{
+                                                    font-size: 22px;
+                                                    height: 50px;
+                                                    margin-bottom: 5px;
+                                                }
+
+                                                p{
+
+                                                    font-size: 15px;
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                                
+
+                                .deliver-type-container{
+
+                                    .first-text-container-in-deliver-type{
+
+                                        p{
+                                            font-size: 26px;
+                                        }
+                                    }
+
+
+                                    .second-card-container-in-deliver-type{
+
+
+
+                                        .deliver-type-card-container{
+                                            height: 100%;
+                                            width: 100%;
+                                            flex-direction: column;
+
+
+                                            li{
+                                                width: 100%;
+                                                margin-bottom: 15px;
+                                                justify-content: center;
+                                                
+
+
+                                                span{
+                                                    font-size: 22px;
+                                                    height: 50px;
+                                                    margin-bottom: 5px;
+                                                }
+
+                                                p{
+
+                                                    font-size: 15px;
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .final-text-container{
+                                    height: 300px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                .fourth-container1{
+                    width: 100%;
+                    height: 400px;
+                    margin-bottom: 30px;
+                    
+                    .inner-fifth{
+                        width: 90%;
+                        height: 90%;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .title-icon-container{
+                            width: auto;
+                        }
+
+                        .list-container{
+                            width: 100%;
+                            justify-content: center;
+
+                            .ul-container{
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+
+                                li{
+                                    margin-bottom: 30px;
+                                    margin-left: 0;
+                                    font-weight: 600;
+                                    font-size: 12px;  
+                                    letter-spacing: 1.4px;
+                                    color: #777c80;
+                                }
+                            }
+                        }
+
+                        .social-icon-container{
+                            
+                            .fa-brands{
+                                margin-right: 30px;
+                            font-size: 30px;
+                            }
+                        }
+                    }
+                }
+
+                .checkOutContainer{
+                    height: 400vh;
+
+
+                    .checkoutCard{
+                        width: 90%;
+                        height: 420px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+///for mobile size 
+
+@media(max-width : 375px){
+
+    body{
+
+        .second-card-container{
+
+            main{
+
+                .third-container1{
+
+                    .inner-third{
+
+                        .right{
+
+                            .inner-right{
+
+
+                                .choice-coffee-container{
+
+                                    .second-card-container{
+                                        
+                                        .card-type-container{
+
+                                            li{
+                                                padding-top: 5px;
+                                                padding-bottom: 5px;
+
+                                                .capsule-text,.filter-text,.espresso-text{
+                                                    height: 35px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .grind-type-card-container{
+
+                                    .second-card-container-in-grind-type{
+
+                                        li{
+
+                                            span{
+                                                height: 35px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .weight-of-coffee-container{
+
+                                    .second-card-container-in-weight-type{
+
+                                        li{
+
+
+                                            span{
+                                                height: 35px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .deliver-type-card-container{
+
+                                    .second-card-container-in-deliver-type{
+
+                                        .deliver-type-card-container{
+
+                                            li{
+
+                                                span{
+                                                    height: 35px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .coffee-type-card-container{
+
+
+                                    .second-card-container-in-coffee-type{
+
+
+                                        .coffee-type-card-container{
+
+                                            li{
+
+                                                span{
+                                                    height: 35px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* --------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------*/
