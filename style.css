@@ -27,6 +27,9 @@ body .main-container header .header-container {
   align-items: center;
   justify-content: space-between;
 }
+body .main-container header .header-container .slideDiv {
+  display: none;
+}
 body .main-container header .header-container .leftHandSideInHeader {
   width: 280px;
   height: 80%;
@@ -47,6 +50,9 @@ body .main-container header .header-container .leftHandSideInHeader span {
   color: rgb(47, 62, 90);
 }
 body .main-container header .header-container .humburgerContainer {
+  display: none;
+}
+body .main-container header .header-container .humburgerContainer .fa-xmark {
   display: none;
 }
 body .main-container header .header-container .rightHandSideInHeader {
@@ -552,7 +558,13 @@ body .second-main-container header .header-container {
   align-items: center;
   justify-content: space-between;
 }
+body .second-main-container header .header-container .slideDiv1 {
+  display: none;
+}
 body .second-main-container header .header-container .humburgerContainer1 {
+  display: none;
+}
+body .second-main-container header .header-container .humburgerContainer1 .xIcon {
   display: none;
 }
 body .second-main-container header .header-container .leftHandSideInHeader {
@@ -1477,6 +1489,38 @@ body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner
   body .main-container header {
     height: 100px;
   }
+  body .main-container header .header-container .slideDiv {
+    display: none;
+    width: 100vw;
+    height: 50vh;
+    background: white;
+    position: absolute;
+    border: none;
+    top: 100px;
+    box-shadow: 0px 0px 40px 60px #ffffff;
+    left: 0;
+    font-family: "Fraunces", serif;
+  }
+  body .main-container header .header-container .slideDiv .slide-list-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+  }
+  body .main-container header .header-container .slideDiv .slide-list-container li {
+    list-style: none;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #29374e;
+  }
+  body .main-container header .header-container .slideDiv .slide-list-container li:hover {
+    text-decoration: underline;
+  }
   body .main-container header .header-container .rightHandSideInHeader {
     display: none;
   }
@@ -1488,9 +1532,13 @@ body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner
     width: 30px;
     height: 30px;
     transition: all 0.3s ease;
+    z-index: 1;
   }
   body .main-container header .header-container .humburgerContainer:active {
     transform: scale(1.1);
+  }
+  body .main-container header .header-container .humburgerContainer .fa-xmark {
+    font-size: 40px;
   }
   body .main-container header .header-container .humburgerContainer .fa-bars {
     font-size: 40px;
@@ -1636,6 +1684,38 @@ body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner
     margin-right: 30px;
     font-size: 30px;
   }
+  body .second-main-container header .header-container .slideDiv1 {
+    display: none;
+    width: 100vw;
+    height: 50vh;
+    background: white;
+    position: absolute;
+    border: none;
+    top: 100px;
+    box-shadow: 0px 0px 40px 60px #ffffff;
+    left: 0;
+    font-family: "Fraunces", serif;
+  }
+  body .second-main-container header .header-container .slideDiv1 .slide-list-container1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+  }
+  body .second-main-container header .header-container .slideDiv1 .slide-list-container1 li {
+    list-style: none;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #29374e;
+  }
+  body .second-main-container header .header-container .slideDiv1 .slide-list-container1 li:hover {
+    text-decoration: underline;
+  }
   body .second-main-container header .header-container .rightHandSideInHeader {
     display: none;
   }
@@ -1651,7 +1731,10 @@ body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner
   body .second-main-container header .header-container .humburgerContainer1:active {
     transform: scale(1.1);
   }
-  body .second-main-container header .header-container .humburgerContainer1 .fa-bars {
+  body .second-main-container header .header-container .humburgerContainer1 .xIcon {
+    font-size: 40px;
+  }
+  body .second-main-container header .header-container .humburgerContainer1 .menu {
     font-size: 40px;
   }
   body .second-main-container main .first-container1 {

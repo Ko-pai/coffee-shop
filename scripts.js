@@ -959,6 +959,42 @@ checkoutButton.addEventListener("click",()=>{
 
 
 
+//humberger icon click
+const humburgerContainer = document.querySelector(".humburgerContainer")
+const humburgerContainer1 = document.querySelector(".humburgerContainer1")
+const menuIcon = document.querySelector(".fa-bars")
+const menuIcon1 = document.querySelector(".menu")
+const xMarkIcon = document.querySelector(".fa-xmark")
+const xIcon = document.querySelector(".xIcon")
+const slideContainer = document.querySelector(".slideDiv")
+const slideContainer1 = document.querySelector(".slideDiv1")
+
+
+humburgerContainer.addEventListener("click",()=>{
+    humburgerFunc(humburgerContainer)
+})
+
+humburgerContainer1.addEventListener("click",()=>{
+    if(humburgerContainer1.classList.contains("active")){
+        humburgerContainer1.classList.remove("active")
+        xIcon.style.display = "none"
+        menuIcon1.style.display = "block"
+        slideContainer1.style.display = "none"
+       
+        tl.fromTo('.menu' , {x : -40 ,opacity : 0} ,{x : 0 ,opacity : 1})
+        tl.fromTo('.slideDiv' , {y : 0 ,scale : 1 } ,{y : -70 ,scale : 0}, "<")
+    }else{
+        humburgerContainer1.classList.add("active")
+        xIcon.style.display = "block"
+        menuIcon1.style.display = "none"
+        slideContainer1.style.display = "flex"
+        tl.fromTo('.xIcon' , {y : -30 ,opacity : 0 ,} ,{y : 0 ,opacity : 1})
+        tl.fromTo('.slideDiv' , {y : -70 ,scale : 0 ,ease : "elastic.in(1, 0.3)"} ,{y : 0 ,scale : 1}, "<")
+    }
+})
+
+
+
 
 
 /* --------------------------------------------------------------------*/
@@ -1365,4 +1401,30 @@ function unActiveEveryMonth(){
     detail.style.color = "rgba(87, 104, 129, 0.76)"
 }
 
+/* --------------------------------------------------------------------*/
+
+
+
+/* --------------------------------------------------------------------*/
+//for humburger function
+
+
+function humburgerFunc (box){
+    if(box.classList.contains("active")){
+        box.classList.remove("active")
+        xMarkIcon.style.display = "none"
+        menuIcon.style.display = "block"
+        
+       
+        tl.fromTo('.fa-bars' , {x : -40 ,opacity : 0} ,{x : 0 ,opacity : 1})
+        tl.fromTo('.slideDiv' , {y : 0 ,scale : 1 } ,{y : -70 ,scale : 0}, "<")
+    }else{
+        box.classList.add("active")
+        xMarkIcon.style.display = "block"
+        menuIcon.style.display = "none"
+        slideContainer.style.display = "flex"
+        tl.fromTo('.fa-xmark' , {y : -30 ,opacity : 0 ,} ,{y : 0 ,opacity : 1})
+        tl.fromTo('.slideDiv' , {y : -70 ,scale : 0 ,ease : "elastic.in(1, 0.3)"} ,{y : 0 ,scale : 1}, "<")
+    }
+}
 /* --------------------------------------------------------------------*/
