@@ -247,8 +247,8 @@ body{
 
                     .coffee-package-container{
                         width: 90%;
-                        height: 500px;
-                        background-color: aqua;
+                        
+                       
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -303,7 +303,7 @@ body{
                                     font-weight: 900;
                                 }
 
-                                h5{
+                                p{
                                     font-size: 16px;
                                     color: #333d4bc9;
                                     text-align: center;
@@ -413,14 +413,14 @@ body{
                             .quality-card,.exculsive-card,.shipping-card{
                                 width: 340px;
                                 height: 100%;
-                                border-radius: 10px;
+                                border-radius: 5px;
                                 display: flex;
                                 flex-direction: column;
                                 align-items: center;
                                 justify-content: center;
                                 background-color: rgb(8 143 136);
                                 padding-top: 30px;
-
+                                
 
                                 .icon-container{
                                     width: 60px;
@@ -442,7 +442,7 @@ body{
                                     align-items: center;
                                     justify-content: center;
 
-                                    h4{
+                                    span{
                                         font-family: 'Fraunces', serif;
                                         font-weight: 800;
                                         color: white;
@@ -452,7 +452,7 @@ body{
 
                                     }
 
-                                    h6{
+                                    p{
                                         width: 80%;
                                         text-align: center;
                                         color: rgba(255, 255, 255, 0.651);
@@ -580,6 +580,22 @@ body{
                                     margin: 0;
                                     color: #fdd6ba;
                                     font-style: normal;
+                                    
+                                    /*
+                                    text-shadow: -1px 1px 0 #9a653b,
+                                        -2px 2px 0 #9a653b,
+                                        -6px 1px 0 #690,
+                                        2px 4px 0 #a10,
+                                        -3px 3px 0 #e1b38e,
+                                        -4px 4px 0 #9a653b,
+                                        -5px 5px 0 #9a653b;
+                                        */
+                                       text-shadow: 0 2px 0 #292322,
+                                                0 3px 0 #c40,
+                                                0 4px 0 #c40,
+                                                0 5px 0 #c40,
+                                                0 6px 0 #c40,
+                                                ;
                                 }
                             }
 
@@ -647,7 +663,7 @@ body{
                 .inner-fifth{
                     width: 100%;
                     height: 130px;
-                    background-color: #252e3d;
+                    background-color: #262f3a;
                     display: flex;
                     justify-content: space-evenly;
 
@@ -670,7 +686,7 @@ body{
                             display: flex;
                             padding: 0;
                             margin: 0;
-    
+                            cursor: pointer;
     
                             li{
                                 list-style: none;
@@ -679,6 +695,11 @@ body{
                                 font-size: 13px;
                                 letter-spacing: 1px;
                                 color: rgb(161, 158, 158);
+
+                                &:hover{
+                                    text-decoration:underline;
+                                    text-decoration-color: white;
+                                }
                                 
                             }
                         }
@@ -812,9 +833,9 @@ body{
             
 
 
-            .first-container1,.second-container1,.third-container1,.fourth-container1{
+            // .first-container1,.second-container1,.third-container1,.fourth-container1{
                 
-            }
+            // }
             // for first contianer
 
             .first-container1{
@@ -1973,6 +1994,7 @@ body{
                             align-items: center;
                             padding: 0;
                             cursor: pointer;
+                            -webkit-tap-highlight-color: transparent;
 
 
 
@@ -2214,6 +2236,7 @@ body{
                                 flex-direction: column;
                                 align-items: center;
                                 justify-content: center;
+                                -webkit-tap-highlight-color: transparent;
 
                                 li{
                                     margin-bottom: 30px;
@@ -2267,6 +2290,7 @@ body{
                             align-items: center;
                             padding: 0;
                             cursor: pointer;
+                            -webkit-tap-highlight-color: transparent;
 
 
 
@@ -2684,8 +2708,262 @@ body{
     }
 }
 
+//for tablet ///
+@media(max-width : 960px){
+    body{
+        
+        .main-container{
 
 
+            main{
+
+                .first-container{
+
+                    .inner-first-container{
+
+                        .text-on-image-container{
+                            width: 100%;
+                            margin-left: 40px;
+
+                            .intro-text-group{
+                                width: 90%;
+
+                                h1{
+                                    font-size: 55px;
+                                    width: 60%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .second-container{
+                    height: 1200px;
+
+                    .inner-second-container{
+                        width: 100%;
+
+                        .ourCollectionText{
+                            top: 33px;
+                            
+                            .blur-text{
+                                width: 100%;
+                                text-align: center;
+                                font-size: 90px;
+
+                            }
+
+                            .color-blur{
+                                top: 130px;
+                                box-shadow: 0px 2px 50px 90px rgb(255 255 255 / 78%);
+
+                            }
+                        }
+
+                        .coffee-package-container{
+
+
+                            .inner-package-container{
+                                flex-direction: column;
+
+                                .package1,.package2,.package3,.package4{
+                                    width: 100%;
+                                    flex-direction: row;
+                                    
+
+                                    .image-container{
+                                        height: 100%;
+
+                                        img{
+                                            width: 75%;
+                                            height: 80%;
+                                        }
+                                    }
+                                    .text-container{
+                                        align-items: unset;
+
+                                        p{
+                                            text-align: start;
+                                            margin: 0;
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                                
+
+                        }
+                    }
+                }
+
+                .third-container{
+                    height: 1000px;
+                    
+                    .inner-third-container{
+
+                        .firstDiv{
+                            height: 620px;
+
+                            .whyChooseContainer{
+                                width: 80%;
+                                height: 45%;
+
+                                p{
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        .secondDiv{
+                            height: auto;
+                            top: 40%;
+
+                            .card-container{
+                                width: 80%;
+                                flex-direction: column;
+
+
+                                .quality-card,.exculsive-card,.shipping-card{
+                                    width: 100%;
+                                    height: 140px;
+                                    flex-direction: row;
+                                    margin-bottom: 20px;
+                                    padding-top: 20px;
+                                    
+
+                                    .icon-container{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+
+                                        img{
+
+                                            width: 80%;
+                                            height: 80%;
+                                        }
+
+                                        
+                                    }
+                                    .card-text-container{
+                                        width: 60%;
+                                        margin-bottom: 10px;
+                                        align-items: unset;
+                                        margin-left: 66px;
+
+
+                                        span{
+                                            font-size: 23px;
+                                            margin: 0;
+                                            padding: 0;
+                                            text-align: start;
+                                            
+                                        }
+                                        
+                                        p{
+                                            width: 90%;
+                                            font-size: 14px;
+                                            text-align: start;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .fourth-container{
+                    height: 800px;
+
+                    .inner-fourth{
+
+                        .text-container-in-fourth{
+                            width: 100%;
+                        }
+
+                        .circle-line-container{
+                            width: 100%;
+
+                            .circle-line{
+
+                                .circle{
+                                    width: 40px;
+                                }
+                            }
+                        }
+
+                        .plan-text-container{
+                            width: 100%;
+
+
+                            section{
+
+                                .number-box {
+
+                                    span{
+                                        font-size: 60px;
+                                    }
+                                }
+
+                                .pick-plan{
+                                    font-size: 27px;
+                                }
+
+                                .text{
+                                    width: 90%;
+                                    height: 50%;
+                                }
+                            }
+                        }
+
+                        .button-container{
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .fifth-container{
+                    height: 350px;
+
+
+                    .inner-fifth{
+                        height: 80%;
+                        flex-direction: column;
+                        align-items: center;
+                        
+                        
+                        
+                        .title-icon-container{
+                            width: 100%;
+                            height: 60%;
+                            justify-content: center;
+                        }
+
+                        .list-container{
+                            width: 70%;
+                            height: 20%;
+                            justify-content: center;
+
+
+                            .ul-container{
+                                width: auto;
+                            }
+                        }
+
+                        .social-icon-container{
+                            width: 190px;
+                            justify-content: space-evenly;
+
+                            .fa-brands{
+                                margin-left: 0;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 ///for mobile size 
@@ -2694,9 +2972,175 @@ body{
 
     body{
 
-        .second-card-container{
+        .main-container{
 
             main{
+
+                .first-container{
+
+                    .inner-first-container{
+
+                        .text-on-image-container{
+                            margin-left: 0;
+
+
+                            .intro-text-group{
+                                width: 100%;
+
+                                h1{
+                                    width: 100%;
+                                    font-size: 43px;
+
+                                    
+                                }
+                                p{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .second-container{
+
+                    .inner-second-container{
+
+                        .coffee-package-container{
+
+                            .inner-package-container{
+                                width: 100%;
+
+
+                                .package1,.package2,.package3,.package4{
+                                    align-items: center;
+
+                                    .image-container{
+                                        width: 90%;
+
+                                        img{
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                .third-container{
+                    height: 1700px;
+
+                    .inner-third-container{
+
+                        .firstDiv{
+
+                            .whyChooseContainer{
+                                width: 100%;
+                                height: 50%;
+
+                                p{
+                                    width: 80%;
+                                }
+                            }
+                        }
+
+
+                        .secondDiv{
+                            top: 25%;
+                            height: 80%;
+
+                            .card-container{
+
+
+
+                                .quality-card,.exculsive-card,.shipping-card{
+                                    width: 90%;
+                                    height: 350px;
+                                    flex-direction: column;
+
+
+                                    .card-text-container{
+                                        width: 100%;
+                                        margin-left: 0;
+                                        align-items: center;
+
+                                        span{
+                                            font-size: 21px;
+                                            text-align: center;
+
+                                            
+
+                                        }
+
+                                        p{
+                                            width: 90%;
+                                            text-align: center;
+                                        }
+                                    }
+
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                .fourth-container{
+                    height: 1200px;
+                }
+
+
+                .fifth-container{
+                    height: 500px;
+                    .inner-fifth{
+                        
+                        .title-icon-container{
+                            height: 100%;
+                            
+                        }
+
+                        .list-container{
+                            height: 60%;
+
+                        }
+
+                        .social-icon-container{
+                            justify-content: center;
+                            margin-left: 20px;
+                            margin-right: 0;
+                            width: 100%;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        //for create plan page responsive
+        .second-main-container{
+
+            main{
+
+
+                .first-container1{
+
+                    .inner-first-container{
+
+                        .text-on-image-container{
+
+                            .intro-text-group{
+
+                                h1{
+                                    font-size: 43px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
 
                 .third-container1{
 
@@ -2714,8 +3158,8 @@ body{
                                         .card-type-container{
 
                                             li{
-                                                padding-top: 5px;
-                                                padding-bottom: 5px;
+                                                justify-content: center;
+                                                
 
                                                 .capsule-text,.filter-text,.espresso-text{
                                                     height: 35px;
@@ -2730,6 +3174,8 @@ body{
                                     .second-card-container-in-grind-type{
 
                                         li{
+                                            justify-content: center;
+
 
                                             span{
                                                 height: 35px;
@@ -2743,6 +3189,7 @@ body{
                                     .second-card-container-in-weight-type{
 
                                         li{
+                                            justify-content: center;
 
 
                                             span{
@@ -2759,6 +3206,8 @@ body{
                                         .deliver-type-card-container{
 
                                             li{
+                                                justify-content: center;
+
 
                                                 span{
                                                     height: 35px;
@@ -2768,7 +3217,7 @@ body{
                                     }
                                 }
 
-                                .coffee-type-card-container{
+                                .coffee-type-container{
 
 
                                     .second-card-container-in-coffee-type{
@@ -2777,6 +3226,8 @@ body{
                                         .coffee-type-card-container{
 
                                             li{
+                                                justify-content: center;
+
 
                                                 span{
                                                     height: 35px;

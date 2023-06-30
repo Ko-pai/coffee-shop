@@ -182,8 +182,6 @@ body .main-container main .second-container .inner-second-container .ourCollecti
 }
 body .main-container main .second-container .inner-second-container .coffee-package-container {
   width: 90%;
-  height: 500px;
-  background-color: aqua;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -249,7 +247,7 @@ body .main-container main .second-container .inner-second-container .coffee-pack
   font-size: 21px;
   font-weight: 900;
 }
-body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package1 .text-container h5, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package2 .text-container h5, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package3 .text-container h5, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package4 .text-container h5 {
+body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package1 .text-container p, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package2 .text-container p, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package3 .text-container p, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package4 .text-container p {
   font-size: 16px;
   color: rgba(51, 61, 75, 0.7882352941);
   text-align: center;
@@ -320,7 +318,7 @@ body .main-container main .third-container .inner-third-container .secondDiv .ca
 body .main-container main .third-container .inner-third-container .secondDiv .card-container .quality-card, body .main-container main .third-container .inner-third-container .secondDiv .card-container .exculsive-card, body .main-container main .third-container .inner-third-container .secondDiv .card-container .shipping-card {
   width: 340px;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -345,7 +343,7 @@ body .main-container main .third-container .inner-third-container .secondDiv .ca
   align-items: center;
   justify-content: center;
 }
-body .main-container main .third-container .inner-third-container .secondDiv .card-container .quality-card .card-text-container h4, body .main-container main .third-container .inner-third-container .secondDiv .card-container .exculsive-card .card-text-container h4, body .main-container main .third-container .inner-third-container .secondDiv .card-container .shipping-card .card-text-container h4 {
+body .main-container main .third-container .inner-third-container .secondDiv .card-container .quality-card .card-text-container span, body .main-container main .third-container .inner-third-container .secondDiv .card-container .exculsive-card .card-text-container span, body .main-container main .third-container .inner-third-container .secondDiv .card-container .shipping-card .card-text-container span {
   font-family: "Fraunces", serif;
   font-weight: 800;
   color: white;
@@ -353,7 +351,7 @@ body .main-container main .third-container .inner-third-container .secondDiv .ca
   text-align: center;
   letter-spacing: 0.5px;
 }
-body .main-container main .third-container .inner-third-container .secondDiv .card-container .quality-card .card-text-container h6, body .main-container main .third-container .inner-third-container .secondDiv .card-container .exculsive-card .card-text-container h6, body .main-container main .third-container .inner-third-container .secondDiv .card-container .shipping-card .card-text-container h6 {
+body .main-container main .third-container .inner-third-container .secondDiv .card-container .quality-card .card-text-container p, body .main-container main .third-container .inner-third-container .secondDiv .card-container .exculsive-card .card-text-container p, body .main-container main .third-container .inner-third-container .secondDiv .card-container .shipping-card .card-text-container p {
   width: 80%;
   text-align: center;
   color: rgba(255, 255, 255, 0.651);
@@ -441,6 +439,16 @@ body .main-container main .fourth-container .inner-fourth .plan-text-container s
   margin: 0;
   color: #fdd6ba;
   font-style: normal;
+  /*
+  text-shadow: -1px 1px 0 #9a653b,
+      -2px 2px 0 #9a653b,
+      -6px 1px 0 #690,
+      2px 4px 0 #a10,
+      -3px 3px 0 #e1b38e,
+      -4px 4px 0 #9a653b,
+      -5px 5px 0 #9a653b;
+      */
+  text-shadow: 0 2px 0 #292322, 0 3px 0 #c40, 0 4px 0 #c40, 0 5px 0 #c40, 0 6px 0 #c40;
 }
 body .main-container main .fourth-container .inner-fourth .plan-text-container section .pick-plan {
   font-family: "Fraunces", serif;
@@ -490,7 +498,7 @@ body .main-container main .fifth-container {
 body .main-container main .fifth-container .inner-fifth {
   width: 100%;
   height: 130px;
-  background-color: #252e3d;
+  background-color: #262f3a;
   display: flex;
   justify-content: space-evenly;
 }
@@ -511,6 +519,7 @@ body .main-container main .fifth-container .inner-fifth .list-container .ul-cont
   display: flex;
   padding: 0;
   margin: 0;
+  cursor: pointer;
 }
 body .main-container main .fifth-container .inner-fifth .list-container .ul-container li {
   list-style: none;
@@ -519,6 +528,10 @@ body .main-container main .fifth-container .inner-fifth .list-container .ul-cont
   font-size: 13px;
   letter-spacing: 1px;
   color: rgb(161, 158, 158);
+}
+body .main-container main .fifth-container .inner-fifth .list-container .ul-container li:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 body .main-container main .fifth-container .inner-fifth .social-icon-container {
   width: 150px;
@@ -1509,6 +1522,7 @@ body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner
     align-items: center;
     padding: 0;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
   body .main-container header .header-container .slideDiv .slide-list-container li {
     list-style: none;
@@ -1671,6 +1685,7 @@ body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    -webkit-tap-highlight-color: transparent;
   }
   body .main-container main .fifth-container .inner-fifth .list-container .ul-container li {
     margin-bottom: 30px;
@@ -1704,6 +1719,7 @@ body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner
     align-items: center;
     padding: 0;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
   body .second-main-container header .header-container .slideDiv1 .slide-list-container1 li {
     list-style: none;
@@ -1945,24 +1961,276 @@ body .second-main-container main .checkOutContainer .checkoutCard .bottom .inner
     height: 420px;
   }
 }
+@media (max-width: 960px) {
+  body .main-container main .first-container .inner-first-container .text-on-image-container {
+    width: 100%;
+    margin-left: 40px;
+  }
+  body .main-container main .first-container .inner-first-container .text-on-image-container .intro-text-group {
+    width: 90%;
+  }
+  body .main-container main .first-container .inner-first-container .text-on-image-container .intro-text-group h1 {
+    font-size: 55px;
+    width: 60%;
+  }
+  body .main-container main .second-container {
+    height: 1200px;
+  }
+  body .main-container main .second-container .inner-second-container {
+    width: 100%;
+  }
+  body .main-container main .second-container .inner-second-container .ourCollectionText {
+    top: 33px;
+  }
+  body .main-container main .second-container .inner-second-container .ourCollectionText .blur-text {
+    width: 100%;
+    text-align: center;
+    font-size: 90px;
+  }
+  body .main-container main .second-container .inner-second-container .ourCollectionText .color-blur {
+    top: 130px;
+    box-shadow: 0px 2px 50px 90px rgba(255, 255, 255, 0.78);
+  }
+  body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container {
+    flex-direction: column;
+  }
+  body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package1, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package2, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package3, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package4 {
+    width: 100%;
+    flex-direction: row;
+  }
+  body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package1 .image-container, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package2 .image-container, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package3 .image-container, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package4 .image-container {
+    height: 100%;
+  }
+  body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package1 .image-container img, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package2 .image-container img, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package3 .image-container img, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package4 .image-container img {
+    width: 75%;
+    height: 80%;
+  }
+  body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package1 .text-container, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package2 .text-container, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package3 .text-container, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package4 .text-container {
+    align-items: unset;
+  }
+  body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package1 .text-container p, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package2 .text-container p, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package3 .text-container p, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package4 .text-container p {
+    text-align: start;
+    margin: 0;
+  }
+  body .main-container main .third-container {
+    height: 1000px;
+  }
+  body .main-container main .third-container .inner-third-container .firstDiv {
+    height: 620px;
+  }
+  body .main-container main .third-container .inner-third-container .firstDiv .whyChooseContainer {
+    width: 80%;
+    height: 45%;
+  }
+  body .main-container main .third-container .inner-third-container .firstDiv .whyChooseContainer p {
+    width: 100%;
+  }
+  body .main-container main .third-container .inner-third-container .secondDiv {
+    height: auto;
+    top: 40%;
+  }
+  body .main-container main .third-container .inner-third-container .secondDiv .card-container {
+    width: 80%;
+    flex-direction: column;
+  }
+  body .main-container main .third-container .inner-third-container .secondDiv .card-container .quality-card, body .main-container main .third-container .inner-third-container .secondDiv .card-container .exculsive-card, body .main-container main .third-container .inner-third-container .secondDiv .card-container .shipping-card {
+    width: 100%;
+    height: 140px;
+    flex-direction: row;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  body .main-container main .third-container .inner-third-container .secondDiv .card-container .quality-card .icon-container, body .main-container main .third-container .inner-third-container .secondDiv .card-container .exculsive-card .icon-container, body .main-container main .third-container .inner-third-container .secondDiv .card-container .shipping-card .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main-container main .third-container .inner-third-container .secondDiv .card-container .quality-card .icon-container img, body .main-container main .third-container .inner-third-container .secondDiv .card-container .exculsive-card .icon-container img, body .main-container main .third-container .inner-third-container .secondDiv .card-container .shipping-card .icon-container img {
+    width: 80%;
+    height: 80%;
+  }
+  body .main-container main .third-container .inner-third-container .secondDiv .card-container .quality-card .card-text-container, body .main-container main .third-container .inner-third-container .secondDiv .card-container .exculsive-card .card-text-container, body .main-container main .third-container .inner-third-container .secondDiv .card-container .shipping-card .card-text-container {
+    width: 60%;
+    margin-bottom: 10px;
+    align-items: unset;
+    margin-left: 66px;
+  }
+  body .main-container main .third-container .inner-third-container .secondDiv .card-container .quality-card .card-text-container span, body .main-container main .third-container .inner-third-container .secondDiv .card-container .exculsive-card .card-text-container span, body .main-container main .third-container .inner-third-container .secondDiv .card-container .shipping-card .card-text-container span {
+    font-size: 23px;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+  }
+  body .main-container main .third-container .inner-third-container .secondDiv .card-container .quality-card .card-text-container p, body .main-container main .third-container .inner-third-container .secondDiv .card-container .exculsive-card .card-text-container p, body .main-container main .third-container .inner-third-container .secondDiv .card-container .shipping-card .card-text-container p {
+    width: 90%;
+    font-size: 14px;
+    text-align: start;
+  }
+  body .main-container main .fourth-container {
+    height: 800px;
+  }
+  body .main-container main .fourth-container .inner-fourth .text-container-in-fourth {
+    width: 100%;
+  }
+  body .main-container main .fourth-container .inner-fourth .circle-line-container {
+    width: 100%;
+  }
+  body .main-container main .fourth-container .inner-fourth .circle-line-container .circle-line .circle {
+    width: 40px;
+  }
+  body .main-container main .fourth-container .inner-fourth .plan-text-container {
+    width: 100%;
+  }
+  body .main-container main .fourth-container .inner-fourth .plan-text-container section .number-box span {
+    font-size: 60px;
+  }
+  body .main-container main .fourth-container .inner-fourth .plan-text-container section .pick-plan {
+    font-size: 27px;
+  }
+  body .main-container main .fourth-container .inner-fourth .plan-text-container section .text {
+    width: 90%;
+    height: 50%;
+  }
+  body .main-container main .fourth-container .inner-fourth .button-container {
+    width: 100%;
+  }
+  body .main-container main .fifth-container {
+    height: 350px;
+  }
+  body .main-container main .fifth-container .inner-fifth {
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .main-container main .fifth-container .inner-fifth .title-icon-container {
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+  }
+  body .main-container main .fifth-container .inner-fifth .list-container {
+    width: 70%;
+    height: 20%;
+    justify-content: center;
+  }
+  body .main-container main .fifth-container .inner-fifth .list-container .ul-container {
+    width: auto;
+  }
+  body .main-container main .fifth-container .inner-fifth .social-icon-container {
+    width: 190px;
+    justify-content: space-evenly;
+  }
+  body .main-container main .fifth-container .inner-fifth .social-icon-container .fa-brands {
+    margin-left: 0;
+  }
+}
 @media (max-width: 375px) {
-  body .second-card-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li {
-    padding-top: 5px;
-    padding-bottom: 5px;
+  body .main-container main .first-container .inner-first-container .text-on-image-container {
+    margin-left: 0;
   }
-  body .second-card-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li .capsule-text, body .second-card-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li .filter-text, body .second-card-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li .espresso-text {
+  body .main-container main .first-container .inner-first-container .text-on-image-container .intro-text-group {
+    width: 100%;
+  }
+  body .main-container main .first-container .inner-first-container .text-on-image-container .intro-text-group h1 {
+    width: 100%;
+    font-size: 43px;
+  }
+  body .main-container main .first-container .inner-first-container .text-on-image-container .intro-text-group p {
+    font-size: 16px;
+  }
+  body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container {
+    width: 100%;
+  }
+  body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package1, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package2, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package3, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package4 {
+    align-items: center;
+  }
+  body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package1 .image-container, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package2 .image-container, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package3 .image-container, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package4 .image-container {
+    width: 90%;
+  }
+  body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package1 .image-container img, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package2 .image-container img, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package3 .image-container img, body .main-container main .second-container .inner-second-container .coffee-package-container .inner-package-container .package4 .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+  body .main-container main .third-container {
+    height: 1700px;
+  }
+  body .main-container main .third-container .inner-third-container .firstDiv .whyChooseContainer {
+    width: 100%;
+    height: 50%;
+  }
+  body .main-container main .third-container .inner-third-container .firstDiv .whyChooseContainer p {
+    width: 80%;
+  }
+  body .main-container main .third-container .inner-third-container .secondDiv {
+    top: 25%;
+    height: 80%;
+  }
+  body .main-container main .third-container .inner-third-container .secondDiv .card-container .quality-card, body .main-container main .third-container .inner-third-container .secondDiv .card-container .exculsive-card, body .main-container main .third-container .inner-third-container .secondDiv .card-container .shipping-card {
+    width: 90%;
+    height: 350px;
+    flex-direction: column;
+  }
+  body .main-container main .third-container .inner-third-container .secondDiv .card-container .quality-card .card-text-container, body .main-container main .third-container .inner-third-container .secondDiv .card-container .exculsive-card .card-text-container, body .main-container main .third-container .inner-third-container .secondDiv .card-container .shipping-card .card-text-container {
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+  }
+  body .main-container main .third-container .inner-third-container .secondDiv .card-container .quality-card .card-text-container span, body .main-container main .third-container .inner-third-container .secondDiv .card-container .exculsive-card .card-text-container span, body .main-container main .third-container .inner-third-container .secondDiv .card-container .shipping-card .card-text-container span {
+    font-size: 21px;
+    text-align: center;
+  }
+  body .main-container main .third-container .inner-third-container .secondDiv .card-container .quality-card .card-text-container p, body .main-container main .third-container .inner-third-container .secondDiv .card-container .exculsive-card .card-text-container p, body .main-container main .third-container .inner-third-container .secondDiv .card-container .shipping-card .card-text-container p {
+    width: 90%;
+    text-align: center;
+  }
+  body .main-container main .fourth-container {
+    height: 1200px;
+  }
+  body .main-container main .fifth-container {
+    height: 500px;
+  }
+  body .main-container main .fifth-container .inner-fifth .title-icon-container {
+    height: 100%;
+  }
+  body .main-container main .fifth-container .inner-fifth .list-container {
+    height: 60%;
+  }
+  body .main-container main .fifth-container .inner-fifth .social-icon-container {
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 0;
+    width: 100%;
+  }
+  body .second-main-container main .first-container1 .inner-first-container .text-on-image-container .intro-text-group h1 {
+    font-size: 43px;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li {
+    justify-content: center;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li .capsule-text, body .second-main-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li .filter-text, body .second-main-container main .third-container1 .inner-third .right .inner-right .choice-coffee-container .second-card-container .card-type-container li .espresso-text {
     height: 35px;
   }
-  body .second-card-container main .third-container1 .inner-third .right .inner-right .grind-type-card-container .second-card-container-in-grind-type li span {
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .grind-type-card-container .second-card-container-in-grind-type li {
+    justify-content: center;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .grind-type-card-container .second-card-container-in-grind-type li span {
     height: 35px;
   }
-  body .second-card-container main .third-container1 .inner-third .right .inner-right .weight-of-coffee-container .second-card-container-in-weight-type li span {
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .weight-of-coffee-container .second-card-container-in-weight-type li {
+    justify-content: center;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .weight-of-coffee-container .second-card-container-in-weight-type li span {
     height: 35px;
   }
-  body .second-card-container main .third-container1 .inner-third .right .inner-right .deliver-type-card-container .second-card-container-in-deliver-type .deliver-type-card-container li span {
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .deliver-type-card-container .second-card-container-in-deliver-type .deliver-type-card-container li {
+    justify-content: center;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .deliver-type-card-container .second-card-container-in-deliver-type .deliver-type-card-container li span {
     height: 35px;
   }
-  body .second-card-container main .third-container1 .inner-third .right .inner-right .coffee-type-card-container .second-card-container-in-coffee-type .coffee-type-card-container li span {
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .coffee-type-container .second-card-container-in-coffee-type .coffee-type-card-container li {
+    justify-content: center;
+  }
+  body .second-main-container main .third-container1 .inner-third .right .inner-right .coffee-type-container .second-card-container-in-coffee-type .coffee-type-card-container li span {
     height: 35px;
   }
 }

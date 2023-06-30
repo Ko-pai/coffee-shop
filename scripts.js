@@ -942,12 +942,13 @@ checkoutButton.addEventListener("click",()=>{
     mainContainer.style.display = "flex"
     mainContainer.style.transform = "rotate(1turn) scale(1)"
     secondMainContainer.style.transform = "translateY(-100%) scale(0)"
+    // tl.fromTo('.second-main-container', { x: 0 , scale : 1 } ,{x : 200 , scale : 0} )
+    secondMainContainer.style.display = "none"
     
     
     setTimeout(()=>{
         window.location.reload()
-        secondMainContainer.style.display = "none"
-    },900)
+    },400)
 
     listOne.classList.remove("active")
     listTwo.classList.remove("active")
