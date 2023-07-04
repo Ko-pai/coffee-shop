@@ -154,7 +154,7 @@ body{
                             padding-left: 5px;
 
                             h1{
-                                width: 71%;
+                                width: 100%;
                                 font-family: 'Fraunces', serif;
                                 font-size: 70px;
                                 padding: 0;
@@ -201,7 +201,7 @@ body{
             //for second container style
             .second-container{
                 width: 100%;
-                height: 800px;
+                height: 650px;
                 
                 display: flex;
                 align-items: center;
@@ -209,7 +209,7 @@ body{
                 position: relative;
 
                 .inner-second-container{
-                    width: 90%;
+                    width: 100%;
                     height: 80%;
                     display: flex;
                     flex-direction: column;
@@ -226,13 +226,15 @@ body{
 
 
                         .blur-text{
-                            font-size: 160px;
+                            font-size: 150px;
                             //font-family: 'Tiro Bangla', serif;
                             font-family: 'Fraunces', serif;
                             padding: 0;
                             font-weight: 800;
                             margin: 0;
                             color: rgb(157 145 145 / 45%);
+                            width: 100%;
+                            text-align: center;
                         }
 
                         .color-blur{
@@ -240,7 +242,7 @@ body{
                             height: 0px;
                             box-shadow: 0px 2px 50px 50px rgba($color: white, $alpha: 0.5642);
                             position: absolute;
-                            top: 160px;
+                            top: 120px;
                         }
 
                     }
@@ -278,8 +280,8 @@ body{
                                 justify-content: center;
 
                                 img{
-                                    width: 80%;
-                                    height: 80%;
+                                    width: 75%;
+                                    height: 75%;
                                     transition: all 0.5s ease;
                                     
                                     &:hover{
@@ -301,6 +303,7 @@ body{
                                     color: #333d4b;
                                     font-size: 21px;
                                     font-weight: 900;
+                                    
                                 }
 
                                 p{
@@ -402,7 +405,7 @@ body{
                         justify-content: center;
 
                         .card-container{
-                            width: 90%;
+                            width: 100%;
                             height: 100%;
                             
                             display: flex;
@@ -1960,6 +1963,364 @@ body{
 /* --------------------------------------------------------------------------*/
             ///   For responsive 
 
+
+//for tablet ///
+@media(max-width : 1026px){
+    body{
+        
+        .main-container{
+
+
+            main{
+
+                .first-container{
+
+                    .inner-first-container{
+
+                        .text-on-image-container{
+                            width: 100%;
+                            margin-left: 40px;
+
+                            .intro-text-group{
+                                width: 90%;
+
+                                h1{
+                                    font-size: 66px;
+                                    width: 80%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .second-container{
+                    height: 1200px;
+
+                    .inner-second-container{
+                        width: 100%;
+
+                        .ourCollectionText{
+                            top: 33px;
+                            
+                            .blur-text{
+                                width: 100%;
+                                text-align: center;
+                                font-size: 90px;
+
+                            }
+
+                            .color-blur{
+                                top: 130px;
+                                box-shadow: 0px 2px 50px 90px rgb(255 255 255 / 78%);
+
+                            }
+                        }
+
+                        .coffee-package-container{
+
+
+                            .inner-package-container{
+                                flex-direction: column;
+
+                                .package1,.package2,.package3,.package4{
+                                    width: 100%;
+                                    flex-direction: row;
+                                    
+
+                                    .image-container{
+                                        height: 100%;
+
+                                        img{
+                                            width: 60%;
+                                            height: 80%;
+                                        }
+                                    }
+                                    .text-container{
+                                        align-items: unset;
+
+                                        p{
+                                            text-align: start;
+                                            margin: 0;
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                                
+
+                        }
+                    }
+                }
+
+                .third-container{
+                    height: 1000px;
+                    
+                    .inner-third-container{
+
+                        .firstDiv{
+                            height: 620px;
+
+                            .whyChooseContainer{
+                                width: 80%;
+                                height: 45%;
+
+                                p{
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        .secondDiv{
+                            height: auto;
+                            top: 40%;
+
+                            .card-container{
+                                width: 80%;
+                                flex-direction: column;
+
+
+                                .quality-card,.exculsive-card,.shipping-card{
+                                    width: 100%;
+                                    height: 140px;
+                                    flex-direction: row;
+                                    margin-bottom: 20px;
+                                    padding-top: 20px;
+                                    
+
+                                    .icon-container{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+
+                                        img{
+
+                                            width: 80%;
+                                            height: 80%;
+                                        }
+
+                                        
+                                    }
+                                    .card-text-container{
+                                        width: 60%;
+                                        margin-bottom: 10px;
+                                        align-items: unset;
+                                        margin-left: 66px;
+
+
+                                        span{
+                                            font-size: 23px;
+                                            margin: 0;
+                                            padding: 0;
+                                            text-align: start;
+                                            
+                                        }
+                                        
+                                        p{
+                                            width: 90%;
+                                            font-size: 14px;
+                                            text-align: start;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .fourth-container{
+                    height: 800px;
+
+                    .inner-fourth{
+
+                        .text-container-in-fourth{
+                            width: 100%;
+                        }
+
+                        .circle-line-container{
+                            width: 100%;
+
+                            .circle-line{
+                                width: 70%;
+
+
+                                .circle{
+                                    width: 25px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+
+                        .plan-text-container{
+                            width: 100%;
+
+
+                            section{
+
+                                .number-box {
+
+                                    span{
+                                        font-size: 60px;
+                                    }
+                                }
+
+                                .pick-plan{
+                                    font-size: 27px;
+                                }
+
+                                .text{
+                                    width: 90%;
+                                    height: 50%;
+                                }
+                            }
+                        }
+
+                        .button-container{
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .fifth-container{
+                    height: 350px;
+
+
+                    .inner-fifth{
+                        height: 80%;
+                        flex-direction: column;
+                        align-items: center;
+                        
+                        
+                        
+                        .title-icon-container{
+                            width: 100%;
+                            height: 60%;
+                            justify-content: center;
+                        }
+
+                        .list-container{
+                            width: 70%;
+                            height: 20%;
+                            justify-content: center;
+
+
+                            .ul-container{
+                                width: auto;
+                            }
+                        }
+
+                        .social-icon-container{
+                            width: 190px;
+                            justify-content: space-evenly;
+
+                            .fa-brands{
+                                margin-left: 0;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .second-main-container{
+
+
+            main{
+
+                .second-container1{
+
+                    .inner-second{
+
+                        .circle-line-container{
+                            
+                            .circle-line{
+                                width: 70%;
+
+
+                                .circle{
+                                    width: 40px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+                        
+                        .plan-text-container{
+                            width: 80%;
+
+
+                            section{
+                                width: 100%;
+                                height: 100%;
+
+
+                                .text{
+                                    width: 90%;
+                                    height: 50%;
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .third-container1{
+                    
+                    .inner-third{
+
+
+                        .left{
+                            display: none;
+
+                        }
+
+                        .right{
+                            width: 100%;
+
+
+                            .inner-right{
+                                width: 95%;
+
+                                .choice-coffee-container{
+
+                                    .second-card-container{
+
+                                        .card-type-container{
+
+                                            li{
+
+                                                .capsule-text{
+                                                    font-size: 21px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .coffee-type-container{
+
+                                    .second-card-container-in-coffee-type{
+
+                                        .coffee-type-card-container{
+
+                                            li{
+
+                                                span{
+                                                    font-size: 21px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
 //for mobile
 @media (max-width : 560px){
 
@@ -2049,6 +2410,7 @@ body{
             }
 
             main{
+
                 align-items: center;
 
                 .first-container{
@@ -2062,13 +2424,15 @@ body{
                         .text-on-image-container{
                             width: 100%;
                             margin-left: 0;
-
+                            justify-content: center;
 
 
                             .intro-text-group{
                                 display: flex;
                                 flex-direction: column;
                                 align-items: center;
+
+
 
                                 h1{
                                     width: 100%;
@@ -2089,12 +2453,19 @@ body{
 
 
                 .second-container{
-                    height: 1900px;
+                    height: 1100px;
 
                     .inner-second-container{
 
                         .ourCollectionText{
-                            display: none;
+                           
+                            .blur-text{
+                                font-size: 50px;
+                            }
+
+                            .color-blur{
+                                top: 128px;
+                            }
                         }
 
                         .coffee-package-container{
@@ -2104,6 +2475,10 @@ body{
 
                                 flex-direction: column;
                                 align-items: center;
+
+                                .package1,.package2,.package3,.package4{
+                                    align-items: center;
+                                }
                             }
                         }
 
@@ -2153,6 +2528,21 @@ body{
                                     height: 400px;
                                     width: 315px;
                                     margin-bottom: 40px;
+                                    flex-direction: column;
+
+
+                                    .card-text-container{
+                                        width: 100%;
+                                        margin-left: 0;
+                                        align-items: center;
+
+                                        p{
+                                            text-align: center;
+
+                                        }
+                                        
+
+                                    }
                                 }
                             }
                         }
@@ -2245,12 +2635,17 @@ body{
                                     font-size: 12px;  
                                     letter-spacing: 1.4px;
                                     color: #777c80;
+                                    height: 40%;
                                 }
                             }
                         }
 
                         .social-icon-container{
-                            
+                            justify-content: center;
+                            width: 100%;
+                            margin-left: 30px;
+                            height: 50%;
+
                             .fa-brands{
                                 margin-right: 30px;
                             font-size: 30px;
@@ -2455,7 +2850,7 @@ body{
                                             li{
                                                 width: 100%;
                                                 margin-bottom: 15px;
-                                                
+                                                justify-content: center;
                                                 
                                                 .capsule-text,.filter-text,.espresso-text{
                                                     font-size: 22px;
@@ -2708,262 +3103,7 @@ body{
     }
 }
 
-//for tablet ///
-@media(max-width : 960px){
-    body{
-        
-        .main-container{
 
-
-            main{
-
-                .first-container{
-
-                    .inner-first-container{
-
-                        .text-on-image-container{
-                            width: 100%;
-                            margin-left: 40px;
-
-                            .intro-text-group{
-                                width: 90%;
-
-                                h1{
-                                    font-size: 55px;
-                                    width: 60%;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .second-container{
-                    height: 1200px;
-
-                    .inner-second-container{
-                        width: 100%;
-
-                        .ourCollectionText{
-                            top: 33px;
-                            
-                            .blur-text{
-                                width: 100%;
-                                text-align: center;
-                                font-size: 90px;
-
-                            }
-
-                            .color-blur{
-                                top: 130px;
-                                box-shadow: 0px 2px 50px 90px rgb(255 255 255 / 78%);
-
-                            }
-                        }
-
-                        .coffee-package-container{
-
-
-                            .inner-package-container{
-                                flex-direction: column;
-
-                                .package1,.package2,.package3,.package4{
-                                    width: 100%;
-                                    flex-direction: row;
-                                    
-
-                                    .image-container{
-                                        height: 100%;
-
-                                        img{
-                                            width: 75%;
-                                            height: 80%;
-                                        }
-                                    }
-                                    .text-container{
-                                        align-items: unset;
-
-                                        p{
-                                            text-align: start;
-                                            margin: 0;
-                                        }
-                                        
-                                    }
-                                }
-                            }
-                                
-
-                        }
-                    }
-                }
-
-                .third-container{
-                    height: 1000px;
-                    
-                    .inner-third-container{
-
-                        .firstDiv{
-                            height: 620px;
-
-                            .whyChooseContainer{
-                                width: 80%;
-                                height: 45%;
-
-                                p{
-                                    width: 100%;
-                                }
-                            }
-                        }
-
-                        .secondDiv{
-                            height: auto;
-                            top: 40%;
-
-                            .card-container{
-                                width: 80%;
-                                flex-direction: column;
-
-
-                                .quality-card,.exculsive-card,.shipping-card{
-                                    width: 100%;
-                                    height: 140px;
-                                    flex-direction: row;
-                                    margin-bottom: 20px;
-                                    padding-top: 20px;
-                                    
-
-                                    .icon-container{
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-
-                                        img{
-
-                                            width: 80%;
-                                            height: 80%;
-                                        }
-
-                                        
-                                    }
-                                    .card-text-container{
-                                        width: 60%;
-                                        margin-bottom: 10px;
-                                        align-items: unset;
-                                        margin-left: 66px;
-
-
-                                        span{
-                                            font-size: 23px;
-                                            margin: 0;
-                                            padding: 0;
-                                            text-align: start;
-                                            
-                                        }
-                                        
-                                        p{
-                                            width: 90%;
-                                            font-size: 14px;
-                                            text-align: start;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .fourth-container{
-                    height: 800px;
-
-                    .inner-fourth{
-
-                        .text-container-in-fourth{
-                            width: 100%;
-                        }
-
-                        .circle-line-container{
-                            width: 100%;
-
-                            .circle-line{
-
-                                .circle{
-                                    width: 40px;
-                                }
-                            }
-                        }
-
-                        .plan-text-container{
-                            width: 100%;
-
-
-                            section{
-
-                                .number-box {
-
-                                    span{
-                                        font-size: 60px;
-                                    }
-                                }
-
-                                .pick-plan{
-                                    font-size: 27px;
-                                }
-
-                                .text{
-                                    width: 90%;
-                                    height: 50%;
-                                }
-                            }
-                        }
-
-                        .button-container{
-                            width: 100%;
-                        }
-                    }
-                }
-
-                .fifth-container{
-                    height: 350px;
-
-
-                    .inner-fifth{
-                        height: 80%;
-                        flex-direction: column;
-                        align-items: center;
-                        
-                        
-                        
-                        .title-icon-container{
-                            width: 100%;
-                            height: 60%;
-                            justify-content: center;
-                        }
-
-                        .list-container{
-                            width: 70%;
-                            height: 20%;
-                            justify-content: center;
-
-
-                            .ul-container{
-                                width: auto;
-                            }
-                        }
-
-                        .social-icon-container{
-                            width: 190px;
-                            justify-content: space-evenly;
-
-                            .fa-brands{
-                                margin-left: 0;
-
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 
 ///for mobile size 
